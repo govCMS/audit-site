@@ -1,0 +1,12 @@
+{
+  "name": "govcms/site-audit",
+  "repositories": [
+      {
+          "type": "vcs",
+          "url": "https://github.com/fiasco/site-audit"
+      }
+  ],
+  "require": {
+      "seanhamlin/site-audit": "dev-master"
+  }
+}

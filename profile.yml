@@ -1,0 +1,38 @@
+metadata :
+  machine_name: 'govcms_sass'
+  title : 'govCMS SaaS'
+checks :
+  \SiteAudit\Check\Drush\ModuleEnabled:
+    modules:
+      - syslog
+      - govcms_tweaks
+      - acsf
+      - acsf_duplication
+      - acsf_openid
+      - acsf_pingdom
+      - acsf_theme
+      - acsf_variables
+      - acquia_spi
+      - acquia_agent
+      - robotstxt
+  \SiteAudit\Check\Drush\ModuleDisabled:
+    modules:
+      - dblog
+      - overlay
+      - php
+      - statistics
+      - update
+  \SiteAudit\Check\Drush\PreprocessCSS : {}
+  \SiteAudit\Check\Drush\PreprocessJS : {}
+  \SiteAudit\Check\Drush\UserRegister : {}
+  \SiteAudit\Check\Drush\ModulePermissions : {}
+  \SiteAudit\Check\Drush\PageCacheMaximumAge :
+    cache : 300
+  \SiteAudit\Check\Drush\UpdateDBStatus: {}
+  \SiteAudit\Check\Drush\Search404: {}
+  \SiteAudit\Check\Drush\SearchDB: {}
+  \SiteAudit\Check\Drush\XMLSiteMapBaseUrl:
+    pattern : '^https://(www|ministerial|agency|blog|docs|annualreport)\.[-a-z]{1,63}\.gov\.au$'
+  \SiteAudit\Check\Acsf\ThemeSize :
+    max_size : 50
+    warning_size: 20
