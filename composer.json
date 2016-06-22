@@ -3,7 +3,7 @@
   "repositories": [
       {
           "type": "vcs",
-          "url": "https://github.com/fiasco/site-audit"
+          "url": "https://github.com/seanhamlin/site-audit"
       }
   ],
   "require": {
