@@ -17,15 +17,20 @@ checks :
       - robotstxt
   \SiteAudit\Check\Drush\ModuleDisabled:
     modules:
+      - services
       - dblog
       - overlay
       - php
       - statistics
       - update
+  \SiteAudit\Check\D7\BlacklistPermissions:
+    permissions:
+      - 'administer seckit'
   \SiteAudit\Check\Drush\PreprocessCSS : {}
   \SiteAudit\Check\Drush\PreprocessJS : {}
   \SiteAudit\Check\Drush\UserRegister : {}
   \SiteAudit\Check\Drush\ModulePermissions : {}
+  \SiteAudit\Check\Drush\NoAdministrators : {}
   \SiteAudit\Check\Drush\PageCacheMaximumAge :
     cache : 300
   \SiteAudit\Check\Drush\UpdateDBStatus: {}
