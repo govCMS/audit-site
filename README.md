@@ -1,4 +1,4 @@
-govCMS Site Audit
+Site Audit
 ==============
 
 This project is to help site building using the govCMS distribtion audit their site builds against acceptable use for hosting on the govCMS SaaS platform.
@@ -12,8 +12,8 @@ To use the tool, you'll need to install it. This tool is built on [Composer](htt
 Once you have composer installed, clone this git repository and install the dependancies with composer:
 
 ```
-git clone git@github.com:govCMS/site-audit.git
-cd site-audit && composer install
+git clone git@github.com:govCMS/audit-site.git
+cd audit-site && composer install
 ```
 
 Usage
