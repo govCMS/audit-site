@@ -20,6 +20,13 @@ Usage
 --------
 To run the audit you'll need to have your site referenceable via a [Drush alias](https://github.com/drush-ops/drush/blob/master/examples/example.aliases.drushrc.php). The Site Audit tool relies on the connection details to the site be setup as a drush alias already.
 
+Before you conduct an audit you should always ensure your tool is up to date.
+```
+git pull origin master
+composer update
+```
+
+Conducting the audit is as simple as running this one command with the correct drush alias.
 ```
 ./audit-site.sh @site.env
 ```
