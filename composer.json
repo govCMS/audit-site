@@ -3,10 +3,10 @@
   "repositories": [
       {
           "type": "vcs",
-          "url": "https://github.com/seanhamlin/site-audit"
+          "url": "https://github.com/fiasco/site-audit"
       }
   ],
   "require": {
-      "seanhamlin/site-audit": "dev-master"
+      "seanhamlin/site-audit": "dev-fixup-regressions-from-annotations"
   }
 }
