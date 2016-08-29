@@ -4,40 +4,61 @@ metadata :
 checks :
   \SiteAudit\Check\Drush\ModuleEnabled:
     modules:
-      - syslog
-      - govcms_tweaks
+      - acquia_spi
+      - acquia_agent
       - acsf
       - acsf_duplication
       - acsf_openid
       - acsf_pingdom
       - acsf_theme
       - acsf_variables
-      - acquia_spi
-      - acquia_agent
+      - govcms_account_security
+      - govcms_tweaks
       - robotstxt
+      - syslog
   \SiteAudit\Check\Drush\ModuleDisabled:
     modules:
       - services
       - dblog
       - overlay
       - php
+      - simpletest
       - statistics
       - update
   \SiteAudit\Check\D7\BlacklistPermissions:
     permissions:
+      - 'add JS snippets for google analytics'
+      - 'administer features'
+      - 'administer govcms_dlm'
+      - 'administer module permissions'
+      - 'administer modules'
+      - 'administer password policies'
+      - 'administer permissions'
       - 'administer seckit'
+      - 'administer site configuration'
+      - 'administer software updates'
+      - 'assign all roles'
+      - 'generate features'
+      - 'manage features'
+      - 'rename features'
   \SiteAudit\Check\Drush\PreprocessCSS : {}
   \SiteAudit\Check\Drush\PreprocessJS : {}
   \SiteAudit\Check\Drush\UserRegister : {}
-  \SiteAudit\Check\Drush\ModulePermissions : {}
   \SiteAudit\Check\Drush\NoAdministrators : {}
   \SiteAudit\Check\Drush\PageCacheMaximumAge :
     cache : 300
   \SiteAudit\Check\Drush\UpdateDBStatus: {}
   \SiteAudit\Check\Drush\Search404: {}
-  \SiteAudit\Check\Drush\SearchDB: {}
+  \SiteAudit\Check\Drush\SessionsAnon: {}
+  \SiteAudit\Check\Drush\CronHasRun: {}
+  \SiteAudit\Check\Drush\CronPoorMans: {}
+  \SiteAudit\Check\Drush\PageCompression: {}
+  \SiteAudit\Check\Drush\ZenRebuildRegistry: {}
+  \SiteAudit\Check\Drush\SearchDB:
+     max_size : 50
   \SiteAudit\Check\Drush\XMLSiteMapBaseUrl:
     pattern : '^https://(www|ministerial|agency|blog|docs|annualreport)\.[-a-z]{1,63}\.gov\.au$'
   \SiteAudit\Check\Acsf\ThemeSize :
     max_size : 50
-    warning_size: 20
+    warning_size : 20
+

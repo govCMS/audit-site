@@ -7,6 +7,6 @@
       }
   ],
   "require": {
-      "seanhamlin/site-audit": "dev-fixup-regressions-from-annotations"
+      "seanhamlin/site-audit": "dev-master"
   }
 }
