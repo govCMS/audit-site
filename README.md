@@ -15,6 +15,19 @@ Once you have composer installed, clone this git repository and install the depe
 git clone git@github.com:govCMS/audit-site.git
 cd audit-site && composer install
 ```
+If you wish to run browser based checks (e.g. page weight check), then you will require Phantomas to be installed on your local system. Note that these checks are optional.
+
+First install Node:
+
+```
+brew install node
+```
+
+And then use NPM to install phantomas:
+
+```
+npm install --global --no-optional phantomas phantomjs-prebuilt@^2.1.5
+```
 
 Usage
 --------
