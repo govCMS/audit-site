@@ -5,4 +5,4 @@ if [ ! -d ./vendor ]; then
   exit 1;
 fi
 
-./vendor/bin/site-audit audit:site -d . -p profile $@
+./vendor/bin/drutiny audit:site -d . -p profile $@

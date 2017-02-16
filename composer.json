@@ -1,12 +1,15 @@
 {
   "name": "govcms/site-audit",
+  "type": "library",
+  "description": "govCMS site audit and remediation tool. Used to verify all sites in Site Factory meet the minimum requirements.",
+  "keywords": ["drupal", "audit", "drush", "ssh", "report"],
   "repositories": [
-      {
-          "type": "vcs",
-          "url": "https://github.com/seanhamlin/site-audit"
-      }
+    {
+      "type": "vcs",
+      "url": "https://github.com/seanhamlin/drutiny"
+    }
   ],
   "require": {
-      "seanhamlin/site-audit": "dev-master"
+    "seanhamlin/drutiny": "dev-master"
   }
 }
