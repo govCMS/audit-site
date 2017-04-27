@@ -229,12 +229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/seanhamlin/drutiny.git",
-                "reference": "2b250fdf1120a739a46cb4fa85a1e47c59da637b"
+                "reference": "91fead770e2f838412561c1fd0599f3e2f889d1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/seanhamlin/drutiny/zipball/2b250fdf1120a739a46cb4fa85a1e47c59da637b",
-                "reference": "2b250fdf1120a739a46cb4fa85a1e47c59da637b",
+                "url": "https://api.github.com/repos/seanhamlin/drutiny/zipball/91fead770e2f838412561c1fd0599f3e2f889d1f",
+                "reference": "91fead770e2f838412561c1fd0599f3e2f889d1f",
                 "shasum": ""
             },
             "require": {
@@ -282,7 +282,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-04-26 04:58:21"
+            "time": "2017-04-27 21:13:28"
         },
         {
             "name": "symfony/class-loader",
