@@ -15,7 +15,9 @@ checks :
       - clamav
       - googleanalytics
       - govcms_account_security
+      - govcms_password_policy
       - govcms_tweaks
+      - password_policy
       - robotstxt
       - shield
       - syslog
@@ -86,6 +88,9 @@ checks :
   \Drutiny\Check\D7\GovcmsCkan :
     endpoint : 'https://data.gov.au'
   \Drutiny\Check\D7\MissingModules : {}
+  \Drutiny\Check\Files\LargePublicFiles :
+    max_size : 20
+  \Drutiny\Check\Files\SensitivePublicFiles : {}
   \Drutiny\Check\D7\SearchDB :
     max_size : 50
   \Drutiny\Check\D7\XMLSiteMapBaseUrl :
