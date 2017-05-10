@@ -1,0 +1,15 @@
+title: "govCMS Account Security"
+class: \Drutiny\Check\Drupal\ModuleEnabled
+tags:
+  - Compliance
+  - Drupal 7
+  - govCMS
+description: |
+  Ensure the govCMS Account Security module is enabled.
+remediation: |
+  Install and enable the govCMS Account Security module into your codebase.
+success: "govCMS Account Security module is enabled."
+failure: govCMS Account Security module is not enabled.
+parameters:
+  module:
+    default: govcms_account_security
