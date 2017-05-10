@@ -1,6 +1,6 @@
 title : 'govCMS SaaS'
 checks :
-  d7.clamav.enabled: {}
+  clamav.enabled: {}
   d7.govcms_account_security.enabled: {}
   d7.govcms_password_policy.enabled: {}
   d7.govcms_tweaks.enabled: {}
