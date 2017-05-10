@@ -2,7 +2,6 @@ title: "ClamAV"
 class: \Drutiny\Check\Drupal\ModuleEnabled
 tags:
   - Compliance
-  - Drupal 7
 description: |
   Ensure the ClamAV module is enabled.
 remediation: |
