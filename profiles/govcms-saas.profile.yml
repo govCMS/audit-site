@@ -32,27 +32,27 @@ checks :
   password_policy.enabled: {}
   robotstxt.enabled: {}
   syslog.enabled: {}
+  d7.user1:
+    blacklist : '(admin|root|drupal|god|govcms|paul|sean|ruwan)'
+    email : 'no_reply@govcms.gov.au'
+    status: 1
+  d7.permissions.blacklist:
+    permissions:
+      - 'add JS snippets for google analytics'
+      - 'administer features'
+      - 'administer govcms_dlm'
+      - 'administer module permissions'
+      - 'administer modules'
+      - 'administer password policies'
+      - 'administer permissions'
+      - 'administer seckit'
+      - 'administer site configuration'
+      - 'administer software updates'
+      - 'assign all roles'
+      - 'generate features'
+      - 'manage features'
+      - 'rename features'
 
-#   \Drutiny\Check\Drush\User1 :
-#     name_blacklist : '(admin|root|drupal|god|govcms|paul|sean|ruwan)'
-#     mail : 'no_reply@govcms.gov.au'
-#     status: 1
-#   \Drutiny\Check\D7\BlacklistPermissions :
-#     permissions:
-#       - 'add JS snippets for google analytics'
-#       - 'administer features'
-#       - 'administer govcms_dlm'
-#       - 'administer module permissions'
-#       - 'administer modules'
-#       - 'administer password policies'
-#       - 'administer permissions'
-#       - 'administer seckit'
-#       - 'administer site configuration'
-#       - 'administer software updates'
-#       - 'assign all roles'
-#       - 'generate features'
-#       - 'manage features'
-#       - 'rename features'
 #   \Drutiny\Check\D7\PreprocessCSS : {}
 #   \Drutiny\Check\D7\PreprocessJS : {}
 #   \Drutiny\Check\D7\ErrorLevel : {}
