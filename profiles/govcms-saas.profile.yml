@@ -52,7 +52,7 @@ checks :
       - 'generate features'
       - 'manage features'
       - 'rename features'
-
+  d7.malicious.uploads: {  }
 #   \Drutiny\Check\D7\PreprocessCSS : {}
 #   \Drutiny\Check\D7\PreprocessJS : {}
 #   \Drutiny\Check\D7\ErrorLevel : {}
@@ -63,7 +63,6 @@ checks :
 #     cache : '0'
 #     codesnippet_after : "ga('create', 'UA-54970022-1', 'auto', {'name': 'govcms'}); ga('govcms.send', 'pageview', {'anonymizeIp': true});"
 #   \Drutiny\Check\D7\NoAdministrators : {}
-#   \Drutiny\Check\D7\WebformUpload : {}
 #   \Drutiny\Check\D7\CacheLifetime : {}
 #   \Drutiny\Check\D7\PageCacheMaximumAge :
 #     cache : 300
