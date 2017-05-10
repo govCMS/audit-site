@@ -1,14 +1,21 @@
 {
-  "name": "govcms/audit-site",
+  "name": "govcms/drutiny",
   "type": "library",
   "description": "govCMS site audit and remediation tool. Used to verify all sites in Site Factory meet the minimum requirements.",
-  "keywords": ["govcms", "drupal", "audit", "drush", "ssh", "report"],
+  "keywords": ["govcms", "drutiny", "drupal", "audit", "drush", "ssh", "report"],
   "license": "GPL-2.0",
   "authors": [
       {"name": "Sean Hamlin", "email": "iwiifm@gmail.com"},
       {"name": "Josh Waihi", "email": "joshwaihi@gmail.com"}
   ],
   "require": {
-    "seanhamlin/drutiny": "dev-master"
+    "drutiny/drutiny": "2.x-dev",
+		"drutiny/acquia": "dev-master"
+  },
+  "autoload": {
+      "psr-4": {
+          "Drutiny\\GovCMS\\": "src/",
+          "DrutinyTests\\GovCMS\\": "tests/src/"
+      }
   }
 }
