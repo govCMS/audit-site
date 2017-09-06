@@ -19,6 +19,7 @@ checks :
       - govcms_tweaks
       - password_policy
       - robotstxt
+      - seckit
       - shield
       - syslog
   \Drutiny\Check\Drush\ModuleDisabled :
