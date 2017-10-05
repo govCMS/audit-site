@@ -62,7 +62,7 @@ checks :
   \Drutiny\Check\D7\ImageDerivatives : {}
   \Drutiny\Check\D7\UserRegister : {}
   \Drutiny\Check\D7\GA :
-    account : '^UA-\d{7,8}-\d{1,2}$'
+    account : '^UA-\d{7,9}-\d{1,2}$'
     cache : '0'
     codesnippet_after : "ga('create', 'UA-54970022-1', 'auto', {'name': 'govcms'}); ga('govcms.send', 'pageview', {'anonymizeIp': true});"
   \Drutiny\Check\D7\NoAdministrators : {}
@@ -75,6 +75,8 @@ checks :
   \Drutiny\Check\D7\Search404 : {}
   \Drutiny\Check\D7\CronHasRun : {}
   \Drutiny\Check\D7\CronPoorMans : {}
+  \Drutiny\Check\D7\AcquiaSearchDisableAutoSwitch : {}
+  \Drutiny\Check\D7\InstallTask : {}
   \Drutiny\Check\D7\DateDefaultTimezone :
     timezone_whitelist :
       - 'Australia/Adelaide'
