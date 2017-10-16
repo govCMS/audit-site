@@ -9,6 +9,6 @@
       {"name": "Josh Waihi", "email": "joshwaihi@gmail.com"}
   ],
   "require": {
-    "seanhamlin/drutiny": "dev-master"
+    "drutiny/drutiny": "1.x-dev"
   }
 }
