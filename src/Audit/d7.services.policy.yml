@@ -1,0 +1,18 @@
+title: Services module disabled
+class: \Drutiny\Audit\D7\ModuleDisabled
+name: govCMS-D7:Services
+tags:
+  - Drupal 7
+  - Compliance
+description: |
+  The Services module can expose API endpoints to a govCMS site. While this
+  module is apart of the govCMS Distribution, the approval to use it on the
+  SaaS platform must be given by the Department of Finance.
+remediation: "Disable the services module: `drush dis services -y`"
+success: The services module is not currently enabled.
+failure: The services module is currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is disabled.
+    default: services

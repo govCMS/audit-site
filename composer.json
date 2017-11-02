@@ -10,7 +10,9 @@
   ],
   "require": {
     "drutiny/drutiny": "2.x-dev",
-		"drutiny/acquia": "dev-master"
+    "drutiny/acquia": "2.x-dev",
+    "drutiny/plugin-drupal-7": "2.x-dev",
+    "drutiny/plugin-distro-common": "2.x-dev"
   },
   "autoload": {
       "psr-4": {

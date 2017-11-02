@@ -1,0 +1,16 @@
+title: Malicious webform uploads
+class: \Drutiny\GovCMS\Audit\Platform\MaliciousWebformUpload
+name: govCMS-D7:MaliciousWebformUpload
+tags:
+  - Security
+  - Drupal 7
+  - govCMS
+description: Spammers are known to want to uplaod files to webforms that allow anonymous user users access.
+remediation: Restrict upload types, enforce a max upload size, use a random folder underneath `webform` to store the uploads.
+success: There are no files uploaded that look malicious.
+failure: |
+  There were {{ malicious_uploads }} malicious webform uploaded files found.
+
+  {{# files }}
+  * {{ . }}
+  {{/ files }}
