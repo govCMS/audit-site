@@ -19,5 +19,6 @@
           "Drutiny\\GovCMS\\": "src/",
           "DrutinyTests\\GovCMS\\": "tests/src/"
       }
-  }
+  },
+  "bin": ["audit"]
 }

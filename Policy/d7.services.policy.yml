@@ -1,5 +1,5 @@
 title: Services module disabled
-class: \Drutiny\Audit\D7\ModuleDisabled
+class: \Drutiny\Plugin\Drupal7\Audit\ModuleDisabled
 name: govCMS-D7:Services
 tags:
   - Drupal 7
