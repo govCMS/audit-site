@@ -261,12 +261,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/plugin-acquia.git",
-                "reference": "b9cbe1450c8162aebdd504ee3731f32dce440c97"
+                "reference": "b963f555f852703df2d2d8c8940c4cd8660a9ef4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/plugin-acquia/zipball/b9cbe1450c8162aebdd504ee3731f32dce440c97",
-                "reference": "b9cbe1450c8162aebdd504ee3731f32dce440c97",
+                "url": "https://api.github.com/repos/drutiny/plugin-acquia/zipball/b963f555f852703df2d2d8c8940c4cd8660a9ef4",
+                "reference": "b963f555f852703df2d2d8c8940c4cd8660a9ef4",
                 "shasum": ""
             },
             "require": {
@@ -274,6 +274,9 @@
                 "drutiny/drutiny": "2.x-dev",
                 "guzzlehttp/guzzle": "~6.0"
             },
+            "bin": [
+                "bin/drutiny-acq"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -303,7 +306,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-10-19 21:53:17"
+            "time": "2017-10-31 20:46:01"
         },
         {
             "name": "drutiny/drutiny",
@@ -311,12 +314,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "67f7cafa7f5dc34e24cb18e1e5d23fca6bd625be"
+                "reference": "e47140504670f86674347efa94d20b9bae0bd3d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/67f7cafa7f5dc34e24cb18e1e5d23fca6bd625be",
-                "reference": "67f7cafa7f5dc34e24cb18e1e5d23fca6bd625be",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/e47140504670f86674347efa94d20b9bae0bd3d2",
+                "reference": "e47140504670f86674347efa94d20b9bae0bd3d2",
                 "shasum": ""
             },
             "require": {
@@ -370,7 +373,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-11-01 20:52:43"
+            "time": "2017-11-03 00:00:31"
         },
         {
             "name": "drutiny/plugin-distro-common",

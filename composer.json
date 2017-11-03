@@ -1,5 +1,5 @@
 {
-  "name": "govcms/drutiny",
+  "name": "govcms/audit",
   "type": "library",
   "description": "govCMS site audit and remediation tool. Used to verify all sites in Site Factory meet the minimum requirements.",
   "keywords": ["govcms", "drutiny", "drupal", "audit", "drush", "ssh", "report"],
