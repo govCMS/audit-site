@@ -1,6 +1,3 @@
-# Warning
-This 2.x branch is in development and is not yet ready for use. DO NOT USE THIS BRANCH.
-
 # govCMS Site Audit
 
 This project is to help site building using the govCMS distribtion audit their site builds against acceptable use for hosting on the [govCMS SaaS platform](https://www.govcms.gov.au/how-it-works/compare-saas-and-paas).

@@ -2,7 +2,7 @@ language: php
 sudo: false
 dist: trusty
 php:
-- '7.1'
+- '5.6'
 cache:
   bundler: true
   apt: true
@@ -32,4 +32,4 @@ deploy:
   on:
     repo: govCMS/audit-site
     tags: true
-    php: 7.1
+    php: 5.6
