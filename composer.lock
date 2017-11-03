@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9deb13439b93d9106050ebbb1bc4af41",
+    "content-hash": "6b7fbd26928187b447e9c5d1ff9376e8",
     "packages": [
         {
             "name": "acquia/acquia-sdk-php-cloud-api",
@@ -314,12 +314,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "e47140504670f86674347efa94d20b9bae0bd3d2"
+                "reference": "a4ebf72244af5273e1b7af51acdccd2d63a8a0b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/e47140504670f86674347efa94d20b9bae0bd3d2",
-                "reference": "e47140504670f86674347efa94d20b9bae0bd3d2",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/a4ebf72244af5273e1b7af51acdccd2d63a8a0b4",
+                "reference": "a4ebf72244af5273e1b7af51acdccd2d63a8a0b4",
                 "shasum": ""
             },
             "require": {
@@ -373,7 +373,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-11-03 00:00:31"
+            "time": "2017-11-03 01:29:19"
         },
         {
             "name": "drutiny/plugin-distro-common",
@@ -435,12 +435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/plugin-drupal-7.git",
-                "reference": "40c913e9867e6df0c50a539257225313d830663b"
+                "reference": "3635e2782c7eabcd30ff51f6ba873ed2a74fbac7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/plugin-drupal-7/zipball/40c913e9867e6df0c50a539257225313d830663b",
-                "reference": "40c913e9867e6df0c50a539257225313d830663b",
+                "url": "https://api.github.com/repos/drutiny/plugin-drupal-7/zipball/3635e2782c7eabcd30ff51f6ba873ed2a74fbac7",
+                "reference": "3635e2782c7eabcd30ff51f6ba873ed2a74fbac7",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-11-01 20:54:31"
+            "time": "2017-11-03 00:17:39"
         },
         {
             "name": "guzzle/cache",
