@@ -20,5 +20,16 @@
           "DrutinyTests\\GovCMS\\": "tests/src/"
       }
   },
-  "bin": ["audit"]
+  "bin": ["audit"],
+  "scripts": {
+    "clean": [
+      "rm audit.phar"
+    ],
+    "pre-build": [
+      "git rev-parse --abbrev-ref HEAD | tee audit.version "
+    ],
+    "build": [
+      "./phar-composer.phar build"
+    ]
+  }
 }

@@ -15,14 +15,14 @@ class LocalCommand extends Command
     {
       $this
          // the name of the command (the part after "bin/console")
-         ->setName('local')
+         ->setName('pre-forklift')
          ->addArgument(
            'drush_alias',
            InputArgument::REQUIRED,
            'The drush alias of the local site. E.g. @local.dev'
          )
          // the short description shown while running "php bin/console list"
-         ->setDescription('Runs a govcms audit on a locally hosted site.');
+         ->setDescription('Validates a govCMS site is ready for forklifting');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -37,7 +37,7 @@ class LocalCommand extends Command
           // 'command' => 'profile:run',
           '--format' => 'html',
           '--report-filename' => $report_filename,
-          'profile' => 'local',
+          'profile' => 'preflight',
           'target'  => $input->getArgument('drush_alias')
       );
 

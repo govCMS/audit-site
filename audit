@@ -24,9 +24,9 @@ else {
 $loader = require 'vendor/autoload.php';
 AnnotationRegistry::registerLoader([$loader, 'loadClass']);
 
-$application = new Application();
+$application = new Application('govCMS Site Audit', file_get_contents(__DIR__ . '/audit.version'));
 $application->addCommands([
   new \Drutiny\GovCMS\Command\LocalCommand()
 ]);
-// $application->setDefaultCommand('local');
+// $application->setDefaultCommand('preflight');
 $application->run();

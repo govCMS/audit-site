@@ -13,13 +13,14 @@ policies:
     'Drupal-7:UpdateModuleDisabled': {  }
     'Drupal-7:StatisticsModuleDisabled': {  }
     'Drupal-7:SimpletestModuleDisabled': {  }
-    'Drupal-7:ShieldModuleDisabled': {  }
     'Drupal-7:SecurePagesConfig:NoDowngrade': {  }
     'Drupal-7:SecurePagesConfig:Enabled': {  }
     'Drupal-7:SecurePagesEnabled': {  }
     'Drupal-7:Search404ModuleDisabled': {  }
     'Drupal-7:PSA-2016-003': {  }
     'Drupal-7:PhpModuleDisabled': {  }
+    'Drupal-7:JsAggregation': {  }
+    'Drupal-7:CSSAggregation': {  }
     'Drupal-7:BlackListPermissions':
       permissions:
         - 'add JS snippets for google analytics'
@@ -38,6 +39,7 @@ policies:
         - 'rename features'
     'Drupal-7:OverlayModuleDisabled': {  }
     'Drupal-7:NoDuplicateModules': {  }
+    'Drupal-7:NoAdmins': {  }
     'Drupal-7:MissingModules': {  }
     'Drupal-7:ImageDerivatives': {  }
     'Drupal-7:ErrorLevel': {  }
@@ -58,3 +60,6 @@ policies:
     'govCMS-D7:AccountSecurity': {  }
     'govCMS-D7:PasswordPolicy': {  }
     'govCMS-D7:MaliciousWebformUpload': {  }
+    'govCMS-D7:Seckit': {  }
+    'govCMS-D7:Shield': {  }
+    'govCMS-D7:RobotsTxt': {  }

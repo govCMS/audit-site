@@ -135,21 +135,21 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97"
+                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/54cacc9b81758b14e3ce750f205a393d52339e97",
-                "reference": "54cacc9b81758b14e3ce750f205a393d52339e97",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
+                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "1.*",
-                "php": "^5.6 || ^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
@@ -158,7 +158,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
@@ -199,7 +199,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-02-24T16:22:25+00:00"
+            "time": "2017-07-22T10:58:02+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -261,12 +261,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/plugin-acquia.git",
-                "reference": "b963f555f852703df2d2d8c8940c4cd8660a9ef4"
+                "reference": "f0a5b1c769922d563602f8e4d718400a4c3ae125"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/plugin-acquia/zipball/b963f555f852703df2d2d8c8940c4cd8660a9ef4",
-                "reference": "b963f555f852703df2d2d8c8940c4cd8660a9ef4",
+                "url": "https://api.github.com/repos/drutiny/plugin-acquia/zipball/f0a5b1c769922d563602f8e4d718400a4c3ae125",
+                "reference": "f0a5b1c769922d563602f8e4d718400a4c3ae125",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-10-31 20:46:01"
+            "time": "2017-11-03 10:12:43"
         },
         {
             "name": "drutiny/drutiny",
@@ -314,12 +314,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "a4ebf72244af5273e1b7af51acdccd2d63a8a0b4"
+                "reference": "e3337867ec25c11c74bb31534a45fd0fb7c9718d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/a4ebf72244af5273e1b7af51acdccd2d63a8a0b4",
-                "reference": "a4ebf72244af5273e1b7af51acdccd2d63a8a0b4",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/e3337867ec25c11c74bb31534a45fd0fb7c9718d",
+                "reference": "e3337867ec25c11c74bb31534a45fd0fb7c9718d",
                 "shasum": ""
             },
             "require": {
@@ -373,7 +373,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-11-03 01:29:19"
+            "time": "2017-11-06 03:51:12"
         },
         {
             "name": "drutiny/plugin-distro-common",
@@ -435,12 +435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/plugin-drupal-7.git",
-                "reference": "3635e2782c7eabcd30ff51f6ba873ed2a74fbac7"
+                "reference": "f16eee1d6416e6e76525f12e58702bbd5df8a99d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/plugin-drupal-7/zipball/3635e2782c7eabcd30ff51f6ba873ed2a74fbac7",
-                "reference": "3635e2782c7eabcd30ff51f6ba873ed2a74fbac7",
+                "url": "https://api.github.com/repos/drutiny/plugin-drupal-7/zipball/f16eee1d6416e6e76525f12e58702bbd5df8a99d",
+                "reference": "f16eee1d6416e6e76525f12e58702bbd5df8a99d",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-11-03 00:17:39"
+            "time": "2017-11-06 03:52:09"
         },
         {
             "name": "guzzle/cache",

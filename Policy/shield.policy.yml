@@ -1,0 +1,14 @@
+title: "Shield"
+class: \Drutiny\Audit\Drupal\ModuleEnabled
+name: govCMS-D7:Shield
+tags:
+  - Compliance
+description: |
+  Ensure the Shield module is enabled.
+remediation: |
+  Install and enable the Shield module into your codebase.
+success: "Shield module is enabled."
+failure: Shield module is not enabled.
+parameters:
+  module:
+    default: shield

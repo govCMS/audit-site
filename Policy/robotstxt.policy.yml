@@ -1,0 +1,14 @@
+title: RobotsTxt
+class: \Drutiny\Audit\Drupal\ModuleEnabled
+name: govCMS-D7:RobotsTxt
+tags:
+  - Compliance
+description: |
+  Ensure the RobotsTxt module is enabled.
+remediation: |
+  Install and enable the RobotsTxt module into your codebase.
+success: "RobotsTxt module is enabled."
+failure: RobotsTxt module is not enabled.
+parameters:
+  module:
+    default: robotstxt
