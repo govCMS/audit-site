@@ -46,7 +46,7 @@ composer update
 Conducting the audit is as simple as running this one command with the correct drush alias.
 
 ```
-./audit-site.sh @site.env
+./audit pre-forklift @site.env
 ```
 
 The audit will inform you through commandline output on the results of the audit. At the end of the audit, it will also provide an HTML report that you can open in a browser.
