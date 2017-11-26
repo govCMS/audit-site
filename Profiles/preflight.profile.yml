@@ -1,7 +1,8 @@
 title: 'GovCMS Local Site Audit'
 policies:
     'Drupal-7:ZenRegistryRebuild': {  }
-    'Drupal-7:XMLSitemapBaseURL': {  }
+    'Drupal-7:XMLSitemapBaseURL':
+      pattern : '^https://(www|ministerial|agency|blog|docs|annualreport|innovation|soe|news)\.[-a-z]{1,63}(\.[-a-z]{1,63})?\.gov\.au$'
     'Drupal-7:ViewsSqlSignature': {  }
     'Drupal-7:ViewsPagination': {  }
     'Drupal-7:ViewsCache': {  }
