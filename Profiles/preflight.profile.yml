@@ -49,8 +49,9 @@ policies:
     'Distro:PasswordPolicyEnabled': {  }
     'Distro:GoogleAnalyticsEnabled': {  }
     'Drupal:SyslogEnabled': {  }
-    'fs:RiskyFiles': {  }
-    'fs:largeFiles': {  }
+    'fs:SensitivePublicFiles': {  }
+    'fs:largeFiles':
+      max_size: 20
     'Drupal:updates': {  }
     'Database:Size':
       max_size : 1000
