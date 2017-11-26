@@ -44,6 +44,7 @@ policies:
     'Drupal-7:MissingModules': {  }
     'Drupal-7:ImageDerivatives': {  }
     'Drupal-7:ErrorLevel': {  }
+    'Drupal-7:DblogModuleDisabled': {  }
     'Distro:RobotstxtEnabled': {  }
     'Distro:PasswordPolicyEnabled': {  }
     'Distro:GoogleAnalyticsEnabled': {  }
