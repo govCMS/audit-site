@@ -48,6 +48,8 @@ policies:
     'Distro:RobotstxtEnabled': {  }
     'Distro:PasswordPolicyEnabled': {  }
     'Distro:GoogleAnalyticsEnabled': {  }
+    'govCMS-D7:GoogleAnalyticsAccount': {  }
+    'govCMS-D7:PageviewsTracker': {  }
     'Drupal:SyslogEnabled': {  }
     'fs:SensitivePublicFiles': {  }
     'fs:largeFiles':
