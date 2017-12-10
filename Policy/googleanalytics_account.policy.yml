@@ -1,0 +1,21 @@
+title: "Google Analytics Account Set"
+class: \Drutiny\Plugin\Drupal7\Audit\VariableCompare
+name: govCMS-D7:GoogleAnalyticsAccount
+tags:
+  - Compliance
+description: |
+  Ensure the a google analytics account is set.
+remediation: |
+  Go to the Google Analytics configuration page and ensure an account ID is
+  provided. This should start with "UA-". E.g. UA-849372958-34.
+success: "Google Analytics account is set"
+failure: No Google Analytics account was found.
+parameters:
+  key:
+    default: googleanalytics_account
+  value:
+    default: UA-
+  comp_type:
+    default: matches
+depends:
+  - Distro:GoogleAnalyticsEnabled
