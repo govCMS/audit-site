@@ -31,5 +31,7 @@
     "build": [
       "./phar-composer.phar build"
     ]
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
