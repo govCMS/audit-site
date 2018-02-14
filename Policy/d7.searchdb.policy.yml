@@ -13,10 +13,9 @@ remediation: |
 success: Search is not using the database.
 warning: |
   Search is using the database.
-  Currently {{nodes_in_search}} nodes in <code>:number_of_db_indexes</code> database index:plural_index.
+  Currently {{index_size}} items indexed in the database {{# indexes }} across
+  multiple indexes {{/ indexes }}
 failure: |
-  There were {{ malicious_uploads }} malicious webform uploaded files found.
-
-  {{# files }}
-  * {{ . }}
-  {{/ files }}
+  Search is using the database.
+  Currently {{index_size}} items indexed in the database {{# indexes }} across
+  multiple indexes {{/ indexes }}
