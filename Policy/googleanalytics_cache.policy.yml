@@ -1,0 +1,26 @@
+title: "Load Google Analytics Script from Google"
+class: \Drutiny\Plugin\Drupal7\Audit\VariableCompare
+name: govCMS-D7:GoogleAnalyticsCache
+tags:
+  - Compliance
+description: |
+  The Google Analytics module allows you to choose whether to load the ga.js
+  script from Google or to download it locally at serve it from within your own
+  domain.
+
+  The preference on the SaaS platform is to load it in from Google. With this
+  approach, visitors would have likely already visited a site using Google
+  Analytics and won't need to download this script a second time. Instead,
+  opting to load it from browser cache.
+remediation: |
+  Go to the Google Analytics configuration page and ensure ga script caching is
+  turned off.
+success: ga.js set to be served from Google.
+failure: ga.js script is set to be served locally. This is a performance degredation.
+parameters:
+  key:
+    default: googleanalytics_cache
+  value:
+    default: 0
+depends:
+  - Distro:GoogleAnalyticsEnabled

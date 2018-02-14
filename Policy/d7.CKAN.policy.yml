@@ -1,0 +1,27 @@
+title: Default Date Timezone
+name: govCMS-D7:CKAN
+class: \Drutiny\Plugin\Drupal7\Audit\VariableCompare
+tags:
+  - Drupal 7
+  - Performance
+description: |
+  Ensuring that the module is configured to talk to the production data endpoint
+  and not some testing endpoint.
+remediation: |
+  Move your CKAN dataset to `{{value}}` and then set the variable
+  `govcms_ckan_endpoint_url` to point to it.
+success: govcms_ckan is correctly configured to talk to `{{value}}`.
+failure: |
+  govcms_ckan is not correctly configured to talk to `{{value}}`. Current set to
+  `{{reading}}`.
+parameters:
+  required_modules:
+    description: Modules that must be enabled if the policy should be executed.
+    default:
+      - govcms_ckan
+  key:
+    description: The name of the variable to check.
+    default: govcms_ckan_endpoint_url
+  value:
+    description: The value of the variable
+    default: https://data.gov.au

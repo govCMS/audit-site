@@ -1,0 +1,22 @@
+title: Database Search Indexes
+class: \Drutiny\GovCMS\Audit\SearchDB
+name: govCMS-D7:SearchDB
+tags:
+  - Security
+  - Drupal 7
+  - govCMS
+description: |
+  Search backed with the database (and not Solr) can cause performance impacts
+  to your site. Often the SQL queries caused but using the database are slow.
+remediation: |
+  Disable `search_api_db` and then configure search to use Solr.
+success: Search is not using the database.
+warning: |
+  Search is using the database.
+  Currently {{nodes_in_search}} nodes in <code>:number_of_db_indexes</code> database index:plural_index.
+failure: |
+  There were {{ malicious_uploads }} malicious webform uploaded files found.
+
+  {{# files }}
+  * {{ . }}
+  {{/ files }}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title | raw }} - {{ domain }}</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/drutiny/drutiny/2.x/assets/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/drutiny/drutiny/2.x/assets/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://raw.githubusercontent.com/drutiny/drutiny/2.x/assets/manifest.json">
+  <link rel="mask-icon" href="https://raw.githubusercontent.com/drutiny/drutiny/2.x/assets/safari-pinned-tab.svg" color="#00a9e3">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 45px;
+      padding-bottom: 20px;
+    }
+    table {
+      font-size: 14px;
+    }
+    .page-header {
+      border-bottom: none;
+    }
+    .alert-success, .alert-danger {
+      background-color: transparent;
+      color: #333333;
+    }
+    #acquia-logo {
+      max-width: 200px;
+    }
+    @media print {
+      .result-group {
+        page-break-inside: avoid;
+      }
+    }
+    @media print {
+      .display-filters {
+        display: none !important;
+      }
+      /*.table .danger td,
+      .table td.danger,
+      .table .danger th {
+        background-color: #f2dede !important;
+      }
+      .table .warning td,
+      .table td.warning,
+      .table .warning th {
+        background-color: #fcf8e3 !important;
+      }
+      .table .success td,
+      .table td.success,
+      .table .success th {
+        background-color: #dff0d8 !important;
+      }*/
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="https://raw.githubusercontent.com/drutiny/drutiny/2.x/assets/logo.png" alt="Drutiny logo" style="float: left; width: 22px; margin-right: 10px;"/>
+        {{ title | raw }}
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+
+    </div><!--/.navbar-collapse -->
+  </div>
+</nav>
+<a id="top"></a>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <img width="74" height="74" alt="govCMS" class="logo" src="https://www.govcms.gov.au/sites/g/files/net2111/themes/site/govcms-theme/img/govcms.svg">
+    <h1>{{ title }}</h1>
+    <p>{{ summary | raw }}</p>
+  </div>
+</div>
+
+{{ content | raw }}
+
+<div class="container">
+  <footer>
+    <p>&copy; Acquia {{ 'now' | date('Y') }} | Confidential</p>
+  </footer>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
