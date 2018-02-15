@@ -33,7 +33,8 @@ AnnotationRegistry::registerLoader([$loader, 'loadClass']);
 
 $application = new Application('govCMS Site Audit', file_get_contents(__DIR__ . '/audit.version'));
 $application->addCommands([
-  new \Drutiny\GovCMS\Command\LocalCommand()
+  new \Drutiny\GovCMS\Command\LocalCommand(),
+  new \Drutiny\GovCMS\Command\SaasCommand(),
 ]);
 // $application->setDefaultCommand('preflight');
 $application->run();
