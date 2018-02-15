@@ -35,7 +35,7 @@ class MaliciousWebformUpload extends Audit {
 
     // Look for NFL uploads.
     $output = $sandbox->drush()->sqlQuery("SELECT filename FROM file_managed WHERE UPPER(filename) LIKE '%NFL%' AND status = 0;");
-    $output = array_filter(explode("\n", $output));
+    $output = array_filter($output);
 
     $malicious_uploads = count($output);
 
