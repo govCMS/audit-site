@@ -1,4 +1,4 @@
-title: 'govCMS Local Site Audit'
+title: 'Local Site Audit'
 template: govcms-page
 policies:
     'Drupal-7:ZenRegistryRebuild':
