@@ -22,5 +22,4 @@ policies:
     parameters:
       directory: %root/%themes/site/
 
-
 template: govcms-page

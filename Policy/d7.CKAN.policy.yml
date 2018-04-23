@@ -1,4 +1,4 @@
-title: Default Date Timezone
+title: govCMS CKAN Configuration
 name: govCMS-D7:CKAN
 class: \Drutiny\Plugin\Drupal7\Audit\VariableCompare
 tags:
