@@ -70,6 +70,7 @@ policies:
     'govCMS-D7:CKAN':
     'Drupal:SyslogEnabled':
     'fs:SensitivePublicFiles':
+    fs:DrupalThemeDirectory:
     'fs:largeFiles':
       parameters:
         max_size: 20
