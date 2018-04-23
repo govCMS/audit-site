@@ -1,0 +1,22 @@
+title: govCMS SaaS Review
+include:
+  - preflight
+policies:
+  Acquia:ACSF:
+  Acquia:AgentEnabled:
+  Acquia:CheckSiteFactoryWorkspace:
+  Acquia:Connected:
+  Acquia:Drupal7:NoDbSearch:
+  Acquia:SiteFactory:Pingdom:
+  Acquia:SiteFactory:SearchAutoSwitch:
+  Acquia:SiteFactory:ThemeEnabled:
+  Acquia:SiteFactory:Variables:
+  Acquia:SiteFactoryDuplication:
+  Acquia:SiteFactoryOpenID:
+  Acquia:SPIEnabled:
+  Drupal-7:CronLast:
+  Drupal:moduleUpdates:
+  govCMS-D7:Tweaks:
+  Acquia:SiteFactory:DrupalThemeDirectory:
+
+template: govcms-page

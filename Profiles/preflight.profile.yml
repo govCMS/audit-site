@@ -1,6 +1,11 @@
-title: 'Local Site Audit'
+title: 'govCMS Local Site Audit'
 template: govcms-page
 policies:
+    Acquia:FilesPerDirectory:
+    Acquia:SiteFactoryDefaultThemePath:
+    Drupal-7:NoPageCompression:
+    Drupal:LintTheme:
+    Drupal:ThemeSecurity:
     'Drupal-7:ZenRegistryRebuild':
     'Drupal-7:XMLSitemapBaseURL':
       parameters:
@@ -53,6 +58,7 @@ policies:
     'Drupal-7:CacheLifetime':
     'Drupal-7:PageCacheMaximumAge':
     'Drupal-7:InstallTaskCompleted':
+
     'Distro:RobotstxtEnabled':
     'Distro:PasswordPolicyEnabled':
     'Distro:GoogleAnalyticsEnabled':
