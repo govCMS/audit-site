@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "43d0e2a159f38d2b02539187af026a6a",
+    "content-hash": "d52ab3c4906b4e5940a509dcc2f827d2",
     "packages": [
         {
             "name": "caseyamcl/toc",
@@ -363,16 +363,16 @@
         },
         {
             "name": "drutiny/drutiny",
-            "version": "2.1.3",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "93b9be914905d1a590d08dcc0acf93171243553e"
+                "reference": "18535c842ce3a12a90fb327fa135ffd12da135f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/93b9be914905d1a590d08dcc0acf93171243553e",
-                "reference": "93b9be914905d1a590d08dcc0acf93171243553e",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/18535c842ce3a12a90fb327fa135ffd12da135f6",
+                "reference": "18535c842ce3a12a90fb327fa135ffd12da135f6",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2018-04-18T00:42:16+00:00"
+            "time": "2018-04-22T23:39:08+00:00"
         },
         {
             "name": "drutiny/http",
