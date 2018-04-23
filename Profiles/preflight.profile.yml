@@ -3,6 +3,8 @@ template: govcms-page
 policies:
     Acquia:FilesPerDirectory:
     Acquia:SiteFactoryDefaultThemePath:
+      parameters:
+        directory: %root/%themes
     Acquia:Drupal7:NoDbSearch:
     Drupal-7:NoPageCompression:
     Drupal:LintTheme:
@@ -59,7 +61,6 @@ policies:
     'Drupal-7:CacheLifetime':
     'Drupal-7:PageCacheMaximumAge':
     'Drupal-7:InstallTaskCompleted':
-
     'Distro:RobotstxtEnabled':
     'Distro:PasswordPolicyEnabled':
     'Distro:GoogleAnalyticsEnabled':

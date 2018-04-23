@@ -18,5 +18,9 @@ policies:
   Drupal:moduleUpdates:
   govCMS-D7:Tweaks:
   Acquia:SiteFactory:DrupalThemeDirectory:
+  Acquia:SiteFactoryDefaultThemePath:
+    parameters:
+      directory: %root/%themes/site/
+
 
 template: govcms-page
