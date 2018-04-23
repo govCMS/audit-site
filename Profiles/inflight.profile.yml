@@ -1,4 +1,7 @@
 title: govCMS SaaS Review
+format:
+  html:
+    template: govcms-page
 include:
   - preflight
 policies:
@@ -21,5 +24,3 @@ policies:
   Acquia:SiteFactoryDefaultThemePath:
     parameters:
       directory: %root/%themes/site/
-
-template: govcms-page
