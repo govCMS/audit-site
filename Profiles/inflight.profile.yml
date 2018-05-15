@@ -19,6 +19,10 @@ policies:
   Acquia:SPIEnabled:
   Drupal-7:CronLast:
   Drupal:moduleUpdates:
+  Drupal:ThemeSecurity:
+    parameters:
+      directory: %root/%themes/site/
+    severity: high
   govCMS-D7:Tweaks:
   Acquia:SiteFactory:DrupalThemeDirectory:
   Acquia:SiteFactoryDefaultThemePath:
