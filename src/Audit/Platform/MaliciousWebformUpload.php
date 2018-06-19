@@ -7,15 +7,10 @@ use Drutiny\Audit\Drupal\ModuleEnabled;
 use Drutiny\Sandbox\Sandbox;
 
 /**
- * @Drutiny\Annotation\CheckInfo(
- *  title = "Malicious webform uploads",
- *  description = "Spammers are known to want to uplaod files to webforms that allow anonymous user users access.",
- *  remediation = "Restrict upload types, enforce a max upload size, use a random folder underneath <code>/webform/</code> to store the uploads.",
- *  not_available = "Webform is not enabled.",
- *  success = "There are no files uploaded that look malicious.",
- *  failure = "There :prefix <code>:number_of_silly_uploads</code> malicious webform upload:plural.:files",
- *  exception = "Could not determine the amount of malicious uploads.",
- * )
+ *  Malicious webform uploads.
+ *
+ *  Spammers are known to want to uplaod files to webforms that allow anonymous
+ *  user users access.
  */
 class MaliciousWebformUpload extends Audit {
 
