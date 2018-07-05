@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "13f7a6f3af35941e3c0e5bbea4a6dbc1",
@@ -134,12 +134,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "531965387ee9cde865d26950d40f64d07c8502f0"
+                "reference": "5c27c61278266ddd5a98fdbe4557467c462b58eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/531965387ee9cde865d26950d40f64d07c8502f0",
-                "reference": "531965387ee9cde865d26950d40f64d07c8502f0",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/5c27c61278266ddd5a98fdbe4557467c462b58eb",
+                "reference": "5c27c61278266ddd5a98fdbe4557467c462b58eb",
                 "shasum": ""
             },
             "require": {
@@ -187,7 +187,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2017-10-16T03:31:19+00:00"
+            "time": "2018-07-05T09:44:29+00:00"
         },
         {
             "name": "paragonie/random_compat",
