@@ -24,6 +24,7 @@ policies:
       directory: %root/%themes/site/
     severity: high
   govCMS-D7:Tweaks:
+  govCMS-D7-SaaS:Symlinks:
   Acquia:SiteFactory:DrupalThemeDirectory:
   Acquia:SiteFactoryDefaultThemePath:
     parameters:
