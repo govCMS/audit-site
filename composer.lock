@@ -1,11 +1,70 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc8924cd261a831a0c5446f55ec1f815",
+    "content-hash": "1bf3a3fd0591108f8b9f560e31fd66e9",
     "packages": [
+        {
+            "name": "acquia/http-hmac-php",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acquia/http-hmac-php.git",
+                "reference": "da3ad88dc10ded01a666e520b56f5e7517590a37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acquia/http-hmac-php/zipball/da3ad88dc10ded01a666e520b56f5e7517590a37",
+                "reference": "da3ad88dc10ded01a666e520b56f5e7517590a37",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6 || ~7.0",
+                "psr/http-message": "~1.0.0"
+            },
+            "replace": {
+                "acquia/hmac-request": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.11",
+                "guzzlehttp/guzzle": "~6.0",
+                "phploc/phploc": "^4.0",
+                "phpmd/phpmd": "^2.0",
+                "phpunit/phpunit": "~5.7",
+                "sebastian/phpcpd": "^2.0",
+                "symfony/psr-http-message-bridge": "^1.0",
+                "symfony/security": "^3.0 | ^4.0",
+                "symfony/security-bundle": "^3.0 | ^4.0",
+                "zendframework/zend-diactoros": "^1.3"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "~6.0",
+                "symfony/psr-http-message-bridge": "^1.0",
+                "symfony/security": "^3.0 | ^4.0",
+                "zendframework/zend-diactoros": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Acquia\\Hmac\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://github.com/acquia/http-hmac-php/graphs/contributors"
+                }
+            ],
+            "description": "An implementation of the HTTP HMAC Spec in PHP that integrates with popular libraries such as Symfony and Guzzle.",
+            "homepage": "https://github.com/acquia/http-hmac-php",
+            "time": "2018-03-23T16:51:53+00:00"
+        },
         {
             "name": "caseyamcl/toc",
             "version": "v1.2",
@@ -308,28 +367,27 @@
         },
         {
             "name": "drutiny/acquia",
-            "version": "2.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/plugin-acquia.git",
-                "reference": "79915d3083c00ba4d42d0561a2b6e12febf3036e"
+                "reference": "8b138d81227b30972238a2b7bcd8ed6ea29ae85f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/plugin-acquia/zipball/79915d3083c00ba4d42d0561a2b6e12febf3036e",
-                "reference": "79915d3083c00ba4d42d0561a2b6e12febf3036e",
+                "url": "https://api.github.com/repos/drutiny/plugin-acquia/zipball/8b138d81227b30972238a2b7bcd8ed6ea29ae85f",
+                "reference": "8b138d81227b30972238a2b7bcd8ed6ea29ae85f",
                 "shasum": ""
             },
             "require": {
-                "drutiny/drutiny": "^2.1.4 || 2.1.x-dev",
+                "acquia/http-hmac-php": "^4.0",
+                "drutiny/drutiny": "2.2.*@dev",
                 "drutiny/http": "2.x-dev",
                 "drutiny/plugin-drupal-7": "2.x-dev",
                 "drutiny/plugin-drupal-8": "2.x-dev",
-                "guzzlehttp/guzzle": "~6.0"
+                "guzzlehttp/guzzle": "~6.0",
+                "kevinrob/guzzle-cache-middleware": "^3.2.1"
             },
-            "bin": [
-                "bin/drutiny-acq"
-            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -359,30 +417,32 @@
                 "report",
                 "ssh"
             ],
-            "time": "2018-04-23T00:30:21+00:00"
+            "time": "2018-06-19T00:51:55+00:00"
         },
         {
             "name": "drutiny/drutiny",
-            "version": "2.2.x-dev",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "9be684789902d418ae4fc24a832aff6266ebd4ae"
+                "reference": "106d11c179fa3ff7643993f64fe8416fac7de282"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/9be684789902d418ae4fc24a832aff6266ebd4ae",
-                "reference": "9be684789902d418ae4fc24a832aff6266ebd4ae",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/106d11c179fa3ff7643993f64fe8416fac7de282",
+                "reference": "106d11c179fa3ff7643993f64fe8416fac7de282",
                 "shasum": ""
             },
             "require": {
                 "caseyamcl/toc": "~1.0",
                 "composer/semver": "^1.4.2",
                 "doctrine/annotations": "^v1.2",
+                "drutiny/http": "^2.1",
                 "erusev/parsedown": "^1.6.3",
                 "fiasco/symfony-console-style-markdown": "~1.0",
                 "mustache/mustache": "^2.11",
                 "paragonie/random_compat": "^2.0",
+                "symfony/cache": "^3.4",
                 "symfony/class-loader": "^3.1",
                 "symfony/console": "^3.4",
                 "symfony/expression-language": "^3.4",
@@ -429,7 +489,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2018-06-18T21:31:59+00:00"
+            "time": "2018-07-03T01:08:48+00:00"
         },
         {
             "name": "drutiny/http",
@@ -437,17 +497,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/http.git",
-                "reference": "4f46e85c268f7233f837d00ce744367a75717205"
+                "reference": "78b465f657776f81c635367a0944f735039e5696"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/http/zipball/4f46e85c268f7233f837d00ce744367a75717205",
-                "reference": "4f46e85c268f7233f837d00ce744367a75717205",
+                "url": "https://api.github.com/repos/drutiny/http/zipball/78b465f657776f81c635367a0944f735039e5696",
+                "reference": "78b465f657776f81c635367a0944f735039e5696",
                 "shasum": ""
             },
             "require": {
-                "drutiny/drutiny": "^2.1.6 || 2.1.x-dev",
-                "guzzlehttp/guzzle": "~6.0"
+                "drutiny/drutiny": "2.2.*@dev",
+                "guzzlehttp/guzzle": "~6.0",
+                "kevinrob/guzzle-cache-middleware": "^3.2.1"
             },
             "type": "library",
             "autoload": {
@@ -458,7 +519,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Drutiny auditing and policies on HTTP requests",
-            "time": "2018-05-08T21:45:01+00:00"
+            "time": "2018-07-02T00:10:01+00:00"
         },
         {
             "name": "drutiny/plugin-distro-common",
@@ -887,6 +948,83 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
+            "name": "kevinrob/guzzle-cache-middleware",
+            "version": "v3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kevinrob/guzzle-cache-middleware.git",
+                "reference": "dda34401a68c54f06c9338a2cc30ae0aecd879a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kevinrob/guzzle-cache-middleware/zipball/dda34401a68c54f06c9338a2cc30ae0aecd879a1",
+                "reference": "dda34401a68c54f06c9338a2cc30ae0aecd879a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "cache/array-adapter": "^0.4 || ^0.5 || ^1.0",
+                "cache/simple-cache-bridge": "^0.1 || ^1.0",
+                "doctrine/cache": "^1.0",
+                "guzzlehttp/guzzle": "^6.0",
+                "illuminate/cache": "^5.0",
+                "league/flysystem": "^1.0",
+                "phpunit/phpunit": "^4.0 || ^5.0",
+                "psr/cache": "^1.0"
+            },
+            "suggest": {
+                "doctrine/cache": "This library have a lot of ready-to-use cache storage (to be use with Kevinrob\\GuzzleCache\\Storage\\DoctrineCacheStorage)",
+                "guzzlehttp/guzzle": "For using this library. It was created for Guzzle6. (but you can use it with any PSR-7 HTTP Client)",
+                "laravel/framework": "To be use with Kevinrob\\GuzzleCache\\Storage\\LaravelCacheStorage",
+                "league/flysystem": "To be use with Kevinrob\\GuzzleCache\\Storage\\FlysystemStorage",
+                "psr/cache": "To be use with Kevinrob\\GuzzleCache\\Storage\\Psr6CacheStorage",
+                "psr/simple-cache": "To be use with Kevinrob\\GuzzleCache\\Storage\\Psr16CacheStorage"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kevinrob\\GuzzleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Robatel",
+                    "email": "kevinrob2@gmail.com",
+                    "homepage": "https://github.com/Kevinrob"
+                }
+            ],
+            "description": "A HTTP/1.1 Cache for Guzzle 6. It's a simple Middleware to be added in the HandlerStack. (RFC 7234)",
+            "homepage": "https://github.com/Kevinrob/guzzle-cache-middleware",
+            "keywords": [
+                "Etag",
+                "Flysystem",
+                "Guzzle",
+                "cache",
+                "cache-control",
+                "doctrine",
+                "expiration",
+                "guzzle6",
+                "handler",
+                "http",
+                "http 1.1",
+                "middleware",
+                "performance",
+                "php",
+                "promise",
+                "psr6",
+                "psr7",
+                "rfc7234",
+                "validation"
+            ],
+            "time": "2018-01-10T13:55:22+00:00"
+        },
+        {
             "name": "knplabs/knp-menu",
             "version": "2.3.0",
             "source": {
@@ -1063,16 +1201,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.15",
+            "version": "v2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09"
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/10bcb46e8f3d365170f6de9d05245aa066b81f09",
-                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/29af24f25bab834fcbb38ad2a69fa93b867e070d",
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d",
                 "shasum": ""
             },
             "require": {
@@ -1108,7 +1246,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-06-08T15:26:40+00:00"
+            "time": "2018-07-04T16:31:37+00:00"
         },
         {
             "name": "psr/cache",
@@ -1303,16 +1441,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "b6f157d4529a3484f60ebc40661b5232526fb432"
+                "reference": "99bd0bc61d1de38a7ab3d98ceab00e46ad7385fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/b6f157d4529a3484f60ebc40661b5232526fb432",
-                "reference": "b6f157d4529a3484f60ebc40661b5232526fb432",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/99bd0bc61d1de38a7ab3d98ceab00e46ad7385fa",
+                "reference": "99bd0bc61d1de38a7ab3d98ceab00e46ad7385fa",
                 "shasum": ""
             },
             "require": {
@@ -1369,11 +1507,11 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2018-05-16T12:49:49+00:00"
+            "time": "2018-06-21T12:16:06+00:00"
         },
         {
             "name": "symfony/class-loader",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/class-loader.git",
@@ -1429,16 +1567,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27"
+                "reference": "1b97071a26d028c9bd4588264e101e14f6e7cd00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/36f83f642443c46f3cf751d4d2ee5d047d757a27",
-                "reference": "36f83f642443c46f3cf751d4d2ee5d047d757a27",
+                "url": "https://api.github.com/repos/symfony/console/zipball/1b97071a26d028c9bd4588264e101e14f6e7cd00",
+                "reference": "1b97071a26d028c9bd4588264e101e14f6e7cd00",
                 "shasum": ""
             },
             "require": {
@@ -1494,20 +1632,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16T08:49:21+00:00"
+            "time": "2018-05-23T05:02:55+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68"
+                "reference": "47e6788c5b151cf0cfdf3329116bf33800632d75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/b28fd73fefbac341f673f5efd707d539d6a19f68",
-                "reference": "b28fd73fefbac341f673f5efd707d539d6a19f68",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/47e6788c5b151cf0cfdf3329116bf33800632d75",
+                "reference": "47e6788c5b151cf0cfdf3329116bf33800632d75",
                 "shasum": ""
             },
             "require": {
@@ -1550,20 +1688,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16T14:03:39+00:00"
+            "time": "2018-06-25T11:10:40+00:00"
         },
         {
             "name": "symfony/expression-language",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "867e4d1f5d4e52435a8ffff6b24fd6a801582241"
+                "reference": "555bf77002c6319eaf6311be7d6213dc3668e641"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/867e4d1f5d4e52435a8ffff6b24fd6a801582241",
-                "reference": "867e4d1f5d4e52435a8ffff6b24fd6a801582241",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/555bf77002c6319eaf6311be7d6213dc3668e641",
+                "reference": "555bf77002c6319eaf6311be7d6213dc3668e641",
                 "shasum": ""
             },
             "require": {
@@ -1600,20 +1738,20 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:37:34+00:00"
+            "time": "2018-06-21T11:10:19+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "472a92f3df8b247b49ae364275fb32943b9656c6"
+                "reference": "3a8c3de91d2b2c68cd2d665cf9d00f7ef9eaa394"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/472a92f3df8b247b49ae364275fb32943b9656c6",
-                "reference": "472a92f3df8b247b49ae364275fb32943b9656c6",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/3a8c3de91d2b2c68cd2d665cf9d00f7ef9eaa394",
+                "reference": "3a8c3de91d2b2c68cd2d665cf9d00f7ef9eaa394",
                 "shasum": ""
             },
             "require": {
@@ -1649,7 +1787,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16T08:49:21+00:00"
+            "time": "2018-06-19T20:52:10+00:00"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -1823,16 +1961,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "4cbf2db9abcb01486a21b7a059e03a62fae63187"
+                "reference": "acc5a37c706ace827962851b69705b24e71ca17c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/4cbf2db9abcb01486a21b7a059e03a62fae63187",
-                "reference": "4cbf2db9abcb01486a21b7a059e03a62fae63187",
+                "url": "https://api.github.com/repos/symfony/process/zipball/acc5a37c706ace827962851b69705b24e71ca17c",
+                "reference": "acc5a37c706ace827962851b69705b24e71ca17c",
                 "shasum": ""
             },
             "require": {
@@ -1868,11 +2006,11 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16T08:49:21+00:00"
+            "time": "2018-05-30T04:24:30+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
@@ -1940,16 +2078,16 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "62ccdf62042fbca3be1e7b2dae84965940023362"
+                "reference": "fca490df65008eb680c5ee9c2d521191c9e54ed5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/62ccdf62042fbca3be1e7b2dae84965940023362",
-                "reference": "62ccdf62042fbca3be1e7b2dae84965940023362",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/fca490df65008eb680c5ee9c2d521191c9e54ed5",
+                "reference": "fca490df65008eb680c5ee9c2d521191c9e54ed5",
                 "shasum": ""
             },
             "require": {
@@ -2021,11 +2159,11 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-18T02:00:55+00:00"
+            "time": "2018-06-19T20:52:10+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",

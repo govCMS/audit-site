@@ -1,0 +1,39 @@
+title: "Theme Repository Symlinks"
+class: \Drutiny\GovCMS\Audit\Platform\ThemeRepositorySymlink
+name: govCMS-D7-SaaS:Symlinks
+tags:
+  - Compliance
+description: |
+  Symlinks that exist in the theme repository should only link to symlinks within
+  that repository. Any symlinks found that reference locations outside of the theme
+  repository are in viloation of the the terms of use.
+remediation: |
+  Review the identified symlinks to determine appropriate action.
+success: |
+  Symlinks found: {{links_count}}.
+
+  {{#links_count}}
+  Symlink | Linked Location
+  ------- | ---------------
+  {{#links}}
+  {{symlink}} | {{realpath}}
+  {{/links}}
+  {{/links_count}}
+failure: |
+  #### Symlink violations: {{bad_links_count}}.
+
+  Symlink | Linked Location
+  ------- | ---------------
+  {{#links}}
+  {{symlink}} | {{realpath}}
+  {{/links}}
+
+  {{#links_count}}
+  #### Other Symlinks: {{links_count}}.
+
+  Symlink | Linked Location
+  ------- | ---------------
+  {{#links}}
+  {{symlink}} | {{realpath}}
+  {{/links}}
+  {{/links_count}}

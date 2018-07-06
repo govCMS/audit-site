@@ -11,7 +11,7 @@
   "require": {
     "php": "^5.6.0",
     "drutiny/drutiny": "2.2.*@dev",
-    "drutiny/acquia": "^2.0 || 2.x-dev",
+    "drutiny/acquia": "2.x-dev",
     "drutiny/plugin-drupal-7": "2.*@dev",
     "drutiny/plugin-distro-common": "2.*@dev"
   },
