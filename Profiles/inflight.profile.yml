@@ -5,18 +5,6 @@ format:
 include:
   - preflight
 policies:
-  Acquia:ACSF:
-  Acquia:AgentEnabled:
-  Acquia:CheckSiteFactoryWorkspace:
-  Acquia:Connected:
-  Acquia:Drupal7:NoDbSearch:
-  Acquia:SiteFactory:Pingdom:
-  Acquia:SiteFactory:SearchAutoSwitch:
-  Acquia:SiteFactory:ThemeEnabled:
-  Acquia:SiteFactory:Variables:
-  Acquia:SiteFactoryDuplication:
-  Acquia:SiteFactoryOpenID:
-  Acquia:SPIEnabled:
   Drupal-7:CronLast:
   Drupal:moduleUpdates:
   Drupal:ThemeSecurity:
@@ -25,7 +13,3 @@ policies:
     severity: high
   govCMS-D7:Tweaks:
   govCMS-D7-SaaS:Symlinks:
-  Acquia:SiteFactory:DrupalThemeDirectory:
-  Acquia:SiteFactoryDefaultThemePath:
-    parameters:
-      directory: %root/%themes/site/

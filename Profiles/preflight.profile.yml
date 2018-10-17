@@ -3,11 +3,6 @@ format:
   html:
     template: govcms-page
 policies:
-    Acquia:FilesPerDirectory:
-    Acquia:SiteFactoryDefaultThemePath:
-      parameters:
-        directory: %root/%themes
-    Acquia:Drupal7:NoDbSearch:
     Drupal-7:NoPageCompression:
     Drupal:LintTheme:
     Drupal:ThemeSecurity:

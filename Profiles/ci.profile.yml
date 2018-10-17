@@ -1,0 +1,139 @@
+title: 'CI Site Audit'
+format:
+  html:
+    template: govcms-page
+policies:
+  Drupal-7:ModulesEnabled:
+    parameters:
+      modules :
+        - clamav
+        - googleanalytics
+        - govcms_account_security
+        - govcms_password_policy
+        - govcms_tweaks
+        - password_policy
+        - robotstxt
+        - seckit
+        - shield
+  Drupal:SyslogEnabled:
+  Drupal-7:DblogModuleDisabled:
+  Drupal-7:OverlayModuleDisabled:
+  Drupal-7:PhpModuleDisabled:
+  Drupal-7:SimpletestModuleDisabled:
+  Drupal-7:StatisticsModuleDisabled:
+  Drupal-7:UpdateModuleDisabled:
+  Drupal:updates:
+  Drupal:AnonSession:
+  Drupal-7:User1LockDown:
+    severity: high
+    parameters:
+      blacklist : '(admin|root|drupal|god|govcms|paul|sean|ruwan)'
+      email : 'no_reply@govcms.gov.au'
+      status : 1
+  Database:Size:
+    parameters:
+      max_size : 1000
+      warning_size : 250
+  Drupal-7:BlackListPermissions:
+    parameters:
+      permissions :
+        - 'add JS snippets for google analytics'
+        - 'administer features'
+        - 'administer govcms_dlm'
+        - 'administer module permissions'
+        - 'administer modules'
+        - 'administer password policies'
+        - 'administer permissions'
+        - 'administer seckit'
+        - 'administer site configuration'
+        - 'administer software updates'
+        - 'assign all roles'
+        - 'generate features'
+        - 'manage features'
+        - 'rename features'
+  Drupal-7:CSSAggregation:
+  Drupal-7:JsAggregation:
+  Drupal-7:ErrorLevel:
+  Drupal-7:ImageDerivatives:
+  Drupal-7:UserRegistrationDisabled:
+  govCMS-D7:GoogleAnalyticsAccount:
+  Drupal-7:NoAdmins:
+  Drupal-7:PSA-2016-003:
+  Drupal-7:CacheLifetime:
+  Drupal-7:PageCacheMaximumAge:
+    parameters:
+      value : 300
+  govCMS-D7:RobotsTxt:
+  Drupal-7:Search404ModuleDisabled:
+  Drupal-7:CronLast:
+  Drupal-7:PoorMansCronDisabled:
+  Drupal-7:InstallTaskCompleted:
+  govCMS-D7:DefaultDateTimezone:
+  Drupal-7:ZenRegistryRebuild:
+  Drupal-7:MissingModules:
+  fs:largeFiles:
+    parameters:
+      max_size : 20
+  fs:SensitivePublicFiles:
+  fs:DrupalThemeDirectory:
+    parameters:
+      max_size : 50
+  Drupal-7:XMLSitemapBaseURL:
+    parameters:
+        value : '^https://(www|ministerial|agency|blog|docs|annualreport|innovation|soe|news)\.[-a-z]{1,63}(\.[-a-z]{1,63})?\.gov\.au$'
+
+  # Theme specific checks.
+  Drupal:LintTheme:
+    parameters:
+        path : '/app/profiles/govcms/themes/govcms/'
+  Drupal:ThemeSecurity:
+    parameters:
+        directory : '/app/profiles/govcms/themes/govcms/'
+        filetypes:
+            - php
+            - inc
+            - theme
+        patterns:
+            - "_POST"
+            - "exec\\("
+            - "db_query"
+            - "db_select"
+            - "db_merge"
+            - "db_update"
+            - "db_write_record"
+            - "\\->query"
+            - "drupal_http_request"
+            - "curl_init"
+            - "passthru"
+            - "proc_open"
+            - "system\\("
+            - "sleep\\("
+            - "mysql_"
+            - "mysqli"
+            - "sqlite"
+            - "db_query"
+            - "db_fetch"
+            - "db_result"
+            - "pager_query"
+            - "db_set_active"
+            - "db_select"
+            - "db_insert"
+            - "db_update"
+            - "db_delete"
+            - "fetchAll"
+            - "fetchField"
+            - "fetchObject"
+            - "fetchAssoc"
+            - "countQuery"
+
+
+  # Module configuration checks.
+  govCMS-D7:PageviewsTracker:
+  govCMS-D7:GoogleAnalyticsCache:
+  govCMS-D7:Services:
+  govCMS-D7:AccountSecurity:
+  govCMS-D7:PasswordPolicy:
+  govCMS-D7:MaliciousWebformUpload:
+  govCMS-D7:Seckit:
+  govCMS-D7:Shield:
+  govCMS-D7:Tweaks:
