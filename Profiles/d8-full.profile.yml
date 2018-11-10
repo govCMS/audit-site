@@ -96,7 +96,10 @@ policies:
   #     limit : 100
 
   # GovCMS specific
-  # govCMS-D7:GoogleAnalyticsAccount: # needs evaluation
+  # govCMS-D7:GoogleAnalyticsAccount:
+  #   severity: normal
+  # govCMS-D7:PageviewsTracker:
+  #   severity: normal
   # govCMS-D7:RobotsTxt:
   #   severity: low
   # govCMS-D7:DefaultDateTimezone:

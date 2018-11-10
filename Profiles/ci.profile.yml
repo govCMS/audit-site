@@ -1,0 +1,7 @@
+title: 'Drupal CI Site Audit'
+format:
+  markdown:
+    template: govcms-page
+include:
+  - d7-ci
+  - d8-ci
