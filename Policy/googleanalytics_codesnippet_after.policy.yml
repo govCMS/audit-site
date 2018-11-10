@@ -23,5 +23,3 @@ parameters:
     default: "ga('create', 'UA-54970022-1', 'auto', {'name': 'govcms'}); ga('govcms.send', 'pageview', {'anonymizeIp': true});"
   comp_type:
     default: matches
-depends:
-  - Distro:GoogleAnalyticsEnabled

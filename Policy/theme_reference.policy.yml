@@ -1,0 +1,32 @@
+title: Drupal Theme Path References
+class: Drutiny\Audit\Filesystem\CodeScan
+name: govCMS-D7:NoSiteFactoryThemeReference
+tags:
+  - Best Practice
+  - Security
+description: |
+  Ensure there are no hard coded references to the default theme path in the
+  deployed theme as this can and will cause a lot of HTTP 404s.
+remediation: |
+  Use a preprocess hook, and inject the path to the asset, using a function
+  such as `drupal_get_path()`.
+success: No default theme paths found.
+failure: |
+  References ({{results.found}}) to the default theme path were found:
+  Filepath | Line | Code
+  -------- | ---- | ----
+  {{#results.findings}}
+  {{basename}} | {{line}} | `{{code}}`
+  {{/results.findings}}
+parameters:
+  directory:
+    default: '%root/%themes/'
+  whitelist:
+    default:
+      - \.md
+      - \.txt
+      - \.svg
+      - \.png
+  patterns:
+    default:
+      - sites\/g\/files\/net
