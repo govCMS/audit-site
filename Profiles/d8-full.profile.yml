@@ -162,13 +162,17 @@ policies:
   # Theme specific checks.
   Drupal:LintTheme:
     severity: low
+    parameters:
+      path: '/app/web/themes/custom/'
   fs:DrupalThemeDirectory:
     severity: normal
     parameters:
+      path: '/app/web/themes/custom/'
       max_size : 50
   Drupal:ThemeSecurity:
     severity: normal
     parameters:
+      path: '/app/web/themes/custom/'
       filetypes:
         - php
         - inc
