@@ -1,7 +1,6 @@
-title: 'Drupal CI Site Audit'
+title: 'Drupal 7 CI Site Audit'
 format:
   markdown:
     template: govcms-page
 include:
-  - d7-ci
-  - d8-ci
+  - d7-full

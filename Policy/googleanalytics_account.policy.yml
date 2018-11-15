@@ -17,5 +17,3 @@ parameters:
     default: UA-
   comp_type:
     default: matches
-depends:
-  - Distro:GoogleAnalyticsEnabled

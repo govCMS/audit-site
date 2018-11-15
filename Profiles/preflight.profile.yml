@@ -6,37 +6,37 @@ policies:
     Drupal-7:NoPageCompression:
     Drupal:LintTheme:
     Drupal:ThemeSecurity:
-    'Drupal-7:ZenRegistryRebuild':
-    'Drupal-7:XMLSitemapBaseURL':
+    Drupal-7:ZenRegistryRebuild:
+    Drupal-7:XMLSitemapBaseURL:
       parameters:
         value : '^https://(www|ministerial|agency|blog|docs|annualreport|innovation|soe|news)\.[-a-z]{1,63}(\.[-a-z]{1,63})?\.gov\.au$'
-    'Drupal-7:ViewsSqlSignature':
-    'Drupal-7:ViewsPagination':
-    'Drupal-7:ViewsCache':
+    Drupal-7:ViewsSqlSignature:
+    Drupal-7:ViewsPagination:
+    Drupal-7:ViewsCache:
         severity: low
-    'Drupal-7:UserRegistrationDisabled':
-    'Drupal-7:User1LockDown':
+    Drupal-7:UserRegistrationDisabled:
+    Drupal-7:User1LockDown:
       severity: high
       parameters:
         blacklist : '(admin|root|drupal|god|govcms|paul|sean|ruwan)'
         email : 'no_reply@govcms.gov.au'
         status: 1
-    'Drupal-7:UpdateModuleDisabled':
+    Drupal-7:UpdateModuleDisabled:
       severity: normal
-    'Drupal-7:StatisticsModuleDisabled':
+    Drupal-7:StatisticsModuleDisabled:
       severity: high
-    'Drupal-7:SimpletestModuleDisabled':
+    Drupal-7:SimpletestModuleDisabled:
       severity: high
-    'Drupal-7:SecurePagesConfig:NoDowngrade':
-    'Drupal-7:SecurePagesConfig:Enabled':
-    'Drupal-7:SecurePagesEnabled':
-    'Drupal-7:Search404ModuleDisabled':
-    'Drupal-7:PSA-2016-003':
-    'Drupal-7:PhpModuleDisabled':
-    'Drupal-7:JsAggregation':
-    'Drupal-7:CSSAggregation':
-    'Drupal-7:PoorMansCronDisabled':
-    'Drupal-7:BlackListPermissions':
+    Drupal-7:SecurePagesConfig:NoDowngrade:
+    Drupal-7:SecurePagesConfig:Enabled:
+    Drupal-7:SecurePagesEnabled:
+    Drupal-7:Search404ModuleDisabled:
+    Drupal-7:PSA-2016-003:
+    Drupal-7:PhpModuleDisabled:
+    Drupal-7:JsAggregation:
+    Drupal-7:CSSAggregation:
+    Drupal-7:PoorMansCronDisabled:
+    Drupal-7:BlackListPermissions:
       parameters:
         permissions:
           - 'add JS snippets for google analytics'
@@ -53,43 +53,43 @@ policies:
           - 'generate features'
           - 'manage features'
           - 'rename features'
-    'Drupal-7:OverlayModuleDisabled':
-    'Drupal-7:NoDuplicateModules':
-    'Drupal-7:NoAdmins':
-    'Drupal-7:MissingModules':
-    'Drupal-7:ImageDerivatives':
-    'Drupal-7:ErrorLevel':
-    'Drupal-7:DblogModuleDisabled':
-    'Drupal-7:CacheLifetime':
-    'Drupal-7:PageCacheMaximumAge':
-    'Drupal-7:InstallTaskCompleted':
+    Drupal-7:OverlayModuleDisabled:
+    Drupal-7:NoDuplicateModules:
+    Drupal-7:NoAdmins:
+    Drupal-7:MissingModules:
+    Drupal-7:ImageDerivatives:
+    Drupal-7:ErrorLevel:
+    Drupal-7:DblogModuleDisabled:
+    Drupal-7:CacheLifetime:
+    Drupal-7:PageCacheMaximumAge:
+    Drupal-7:InstallTaskCompleted:
     Drupal-7:entityreference:
-    'Distro:RobotstxtEnabled':
-    'Distro:PasswordPolicyEnabled':
-    'Distro:GoogleAnalyticsEnabled':
-    'govCMS-D7:GoogleAnalyticsAccount':
-    'govCMS-D7:PageviewsTracker':
-    'govCMS-D7:GoogleAnalyticsCache':
-    'govCMS-D7:DefaultDateTimezone':
-    'govCMS-D7:CKAN':
-    'Drupal:SyslogEnabled':
-    'fs:SensitivePublicFiles':
+    Distro:RobotstxtEnabled:
+    Distro:PasswordPolicyEnabled:
+    Distro:GoogleAnalyticsEnabled:
+    govcms-D7:GoogleAnalyticsAccount:
+    govcms-D7:PageviewsTracker:
+    govcms-D7:GoogleAnalyticsCache:
+    govcms-D7:DefaultDateTimezone:
+    govcms-D7:CKAN:
+    Drupal:SyslogEnabled:
+    fs:SensitivePublicFiles:
     fs:DrupalThemeDirectory:
-    'fs:largeFiles':
+    fs:largeFiles:
       parameters:
         max_size: 20
-    'Drupal:updates':
-    'Database:Size':
+    Drupal:updates:
+    Database:Size:
       parameters:
         max_size : 1000
         warning_size : 250
-    'Drupal:AnonSession':
-    'Drupal-7:NoPageCompression':
-    'govCMS-D7:Services':
-    'govCMS-D7:ClamAV':
-    'govCMS-D7:AccountSecurity':
-    'govCMS-D7:PasswordPolicy':
-    'govCMS-D7:MaliciousWebformUpload':
-    'govCMS-D7:Seckit':
-    'govCMS-D7:Shield':
-    'govCMS-D7:RobotsTxt':
+    Drupal:AnonSession:
+    Drupal-7:NoPageCompression:
+    govcms-D7:Services:
+    govcms-D7:ClamAV:
+    govcms-D7:AccountSecurity:
+    govcms-D7:PasswordPolicy:
+    govcms-D7:MaliciousWebformUpload:
+    govcms-D7:Seckit:
+    govcms-D7:Shield:
+    govcms-D7:RobotsTxt:

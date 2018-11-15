@@ -1,0 +1,6 @@
+title: 'Drupal 8 Nightly Audit'
+format:
+  html:
+    template: govcms-page
+include:
+  - d8-full
