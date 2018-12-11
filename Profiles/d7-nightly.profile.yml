@@ -110,8 +110,6 @@ policies:
     severity: normal
   govCMS-D7:MaliciousWebformUpload:
     severity: normal
-  govCMS-D7:Shield:
-    severity: low
   govCMS-D7:NoSiteFactoryThemeReference:
     severity: normal
 
