@@ -103,7 +103,7 @@ policies:
   Drupal-7:XMLSitemapBaseURL:
     severity: low
     parameters:
-      value : '^https://(www|ministerial|agency|blog|docs|annualreport|innovation|soe|news)\.[-a-z]{1,63}(\.[-a-z]{1,63})?\.gov\.au$'
+      value : '^https://(www|ministerial|agency|alpha|beta|blog|docs|annualreport|innovation|soe|news)\.[-a-z]{1,63}(\.[-a-z]{1,63})?\.gov\.au$'
   govCMS-D7:PageviewsTracker:
     severity: normal
   govCMS-D7:Services:
