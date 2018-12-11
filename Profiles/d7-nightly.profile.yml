@@ -16,7 +16,6 @@ policies:
         - password_policy
         - robotstxt
         - seckit
-        - shield
         - lagoon_logs
   Drupal:SyslogEnabled:
     severity: normal
