@@ -172,9 +172,6 @@ policies:
         - "exec\\("
         - "db_query"
         - "db_select"
-        - "db_merge"
-        - "db_update"
-        - "db_write_record"
         - "\\->query"
         - "drupal_http_request"
         - "curl_init"
@@ -191,12 +188,22 @@ policies:
         - "pager_query"
         - "db_set_active"
         - "db_select"
-        - "db_insert"
-        - "db_update"
-        - "db_delete"
         - "fetchAll"
         - "fetchField"
         - "fetchObject"
         - "fetchAssoc"
         - "countQuery"
+  Drupal:ThemeSecurity:
+    severity: high
+    parameters:
+      filetypes:
+        - php
+        - inc
+        - theme
+      patterns:
+        - "db_write_record"
+        - "db_insert"
+        - "db_merge"
+        - "db_update"
+        - "db_delete"
 
