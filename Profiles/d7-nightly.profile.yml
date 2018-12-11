@@ -130,7 +130,7 @@ policies:
   fs:largeFiles:
     severity: normal
     parameters:
-      max_size : 20
+      max_size : 10000
   Drupal:largeFiles:
     severity: normal
     parameters:
