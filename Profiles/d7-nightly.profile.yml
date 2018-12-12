@@ -55,7 +55,7 @@ policies:
   Drupal-7:User1LockDown:
     severity: high
     parameters:
-      blacklist : '(admin|root|drupal|god|govcms|paul|sean|ruwan)'
+      blacklist : '(admin|root|drupal|god|govcms|paul|sean|ruwan|joseph|doug|karl)'
       email : 'no_reply@govcms.gov.au'
       status : 1
   Drupal-7:UserRegistrationDisabled:
