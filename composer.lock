@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7e7775c7829b6ce9c8b0698a0539eb3",
+    "content-hash": "46a218415abd1082e301be2d558fd9c5",
     "packages": [
         {
             "name": "caseyamcl/toc",
@@ -308,16 +308,16 @@
         },
         {
             "name": "drutiny/drutiny",
-            "version": "2.3.1",
+            "version": "2.3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "3c822c4f72a90614593478c2d71b4ceba35641ed"
+                "reference": "92719de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/3c822c4f72a90614593478c2d71b4ceba35641ed",
-                "reference": "3c822c4f72a90614593478c2d71b4ceba35641ed",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/92719de",
+                "reference": "92719de",
                 "shasum": ""
             },
             "require": {
@@ -326,6 +326,7 @@
                 "doctrine/annotations": "^v1.2",
                 "drutiny/http": "^2.4",
                 "erusev/parsedown": "^1.6.3",
+                "ext-bcmath": "*",
                 "fiasco/symfony-console-style-markdown": "~1.0",
                 "mustache/mustache": "^2.11",
                 "paragonie/random_compat": "^2.0",
@@ -378,7 +379,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2018-08-29T20:49:49+00:00"
+            "time": "2019-01-23T02:50:23+00:00"
         },
         {
             "name": "drutiny/http",
@@ -2170,7 +2171,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drutiny/drutiny": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
