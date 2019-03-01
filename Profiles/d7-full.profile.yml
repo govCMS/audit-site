@@ -14,10 +14,11 @@ policies:
         - govcms_password_policy
         - govcms_tweaks
         - password_policy
+        - lagoon_logs
+        - lagoon_search
         - robotstxt
         - seckit
         - shield
-        - lagoon_logs
   Drupal:SyslogEnabled:
     severity: normal
   Drupal-7:DblogModuleDisabled:
@@ -57,8 +58,8 @@ policies:
   Drupal-7:User1LockDown:
     severity: high
     parameters:
-      blacklist : '(admin|root|drupal|god|govcms|paul|sean|ruwan)'
-      email : 'no_reply@govcms.gov.au'
+      blacklist : '(admin|root|drupal|god|no_reply|paul|sean|ruwan)'
+      email : 'noreply@govcms.gov.au'
       status : 1
   Drupal-7:UserRegistrationDisabled:
       severity: normal
