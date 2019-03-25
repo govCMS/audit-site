@@ -5,6 +5,8 @@ format:
 policies:
   Drupal:LintTheme:
     severity: low
+  Drupal:ModuleScan:
+    severity: critical
   Drupal:ThemeSecurity:
     severity: critical
     parameters:
