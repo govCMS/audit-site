@@ -1,4 +1,4 @@
-title: 'Drupal 7 Gitlab Pipeline'
+title: 'Drupal Gitlab Pipeline'
 format:
   html:
     template: govcms-page
