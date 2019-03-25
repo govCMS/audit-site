@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": "^7.1.0",
-    "drutiny/drutiny": "2.3.x-dev#b759dc6",
+    "drutiny/drutiny": "2.3.x-dev#92719de",
     "drutiny/http": "2.4",
     "drutiny/plugin-drupal-7": "2.1",
     "drutiny/plugin-drupal-8": "2.1"
