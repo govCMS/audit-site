@@ -1,0 +1,29 @@
+title: "Search for modules"
+name: Drupal:ModuleScan
+class: \Drutiny\GovCMS\Audit\ModuleSearch
+tags:
+  - Compliance
+description: |
+  Scan a specified directory or the default theme path for additional themes or modules.
+remediation: |
+  Additonal themes will not fail - remove any modules contained in the directory.
+success: |
+  No modules were found in the specified directory.
+
+  The following themes were found:
+  {{#themesFound}}
+    - {{ . }}
+  {{/themesFound}}
+failure: |
+  The following modules were found in the specified directory:
+
+  {{#modulesFound}}
+    - {{ . }}
+  {{/modulesFound}}
+parameters:
+  directory:
+    type: string
+    default: ""
+    description: |
+      Path to the directory to scan for nested modules and themes.
+      Leave as default ("") to dynamically detect the default theme path.
