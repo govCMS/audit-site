@@ -139,24 +139,11 @@ policies:
   Drupal:largeFiles:
     severity: normal
     parameters:
-      max_size : 20000
-  fs:SensitivePublicFiles:
-    severity: high
-    parameters:
-      extensions:
-        - sql #will likely indicate a data breach
+      max_size : 20000000 #20MB
   fs:SensitivePublicFiles:
     severity: normal
     parameters:
-      extensions:
-        - php
-        - sh
-        - py
-        - bz2
-        - gz
-        - tar
-        - tgz
-        - zip
+      extensions: 'sql,php,sh,py,bz2,gz,tar,tgz,zip'
 
   # Theme specific checks.
   Drupal:LintTheme:

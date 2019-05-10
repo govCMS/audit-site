@@ -12,6 +12,7 @@ policies:
   Drupal:ThemeSecurity:
     severity: critical
     parameters:
+      directory: '/app/web/themes/custom/'
       filetypes:
         - php
         - inc
