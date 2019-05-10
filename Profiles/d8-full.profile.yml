@@ -4,26 +4,10 @@ format:
     template: govcms-page
 policies:
   # Modules
-  # Drupal-7:ModulesEnabled:
-  #   severity: high
-  #   parameters:
-  #     modules :
-  #       - clamav
-  #       - googleanalytics
-  #       - govcms_account_security
-  #       - govcms_password_policy
-  #       - govcms_tweaks
-  #       - password_policy
-  #       - robotstxt
-  #       - seckit
-  #       - shield
-  #       - lagoon_logs
   Drupal:SyslogEnabled:
     severity: normal
   Drupal-8:DblogDisabled:
     severity: normal
-  # Drupal-7:OverlayModuleDisabled:
-  #   severity: normal
   Drupal-8:PhpDisabled:
     severity: high
   Drupal-8:SimpleTestDisabled:
@@ -34,24 +18,6 @@ policies:
     severity: high
 
   # permissions
-  # Drupal-7:BlackListPermissions:
-  #   severity: high
-  #   parameters:
-  #     permissions :
-  #       - 'add JS snippets for google analytics'
-  #       - 'administer features'
-  #       - 'administer govcms_dlm'
-  #       - 'administer module permissions'
-  #       - 'administer modules'
-  #       - 'administer password policies'
-  #       - 'administer permissions'
-  #       - 'administer seckit'
-  #       - 'administer site configuration'
-  #       - 'administer software updates'
-  #       - 'assign all roles'
-  #       - 'generate features'
-  #       - 'manage features'
-  #       - 'rename features'
   Drupal:AnonSession:
     severity: normal
   Drupal-8:User1LockDown:
@@ -62,10 +28,6 @@ policies:
       status : 1
   Drupal-8:UserRegistrationAdminOnly:
       severity: normal
-  # Drupal-7:NoAdmins:
-  #     severity: high
-  # Drupal-7:PSA-2016-003:
-  #     severity: high
 
   # Performance
   Drupal-8:CssAggregation:
@@ -74,50 +36,8 @@ policies:
     severity: normal
   Drupal-8:ErrorLevel:
     severity: normal
-  # Drupal-7:ImageDerivatives:
-  #   severity: normal
-  # Drupal-7:CacheLifetime:
-  #   severity: normal
-  # Drupal-7:PageCacheMaximumAge:
-  #   severity: normal
-  #   parameters:
-  #     value : 300
-  # Drupal-7:Search404ModuleDisabled:
-  #   severity: normal
   Drupal-8:CronLast:
     severity: normal
-  # Drupal-7:PoorMansCronDisabled:
-  #   severity: normal
-  # Drupal-7:ViewsCache:
-  #   severity: normal
-  # Drupal-7:ViewsPagination:
-  #   severity: normal
-  #   parameters:
-  #     limit : 100
-
-  # GovCMS specific
-  # govCMS-D7:GoogleAnalyticsAccount:
-  #   severity: normal
-  # govCMS-D7:PageviewsTracker:
-  #   severity: normal
-  # govCMS-D7:RobotsTxt:
-  #   severity: low
-  # govCMS-D7:DefaultDateTimezone:
-  #   severity: low
-  # Drupal-7:XMLSitemapBaseURL:
-  #   severity: low
-  #   parameters:
-  #       value : '^https://(www|ministerial|agency|blog|docs|annualreport|innovation|soe|news)\.[-a-z]{1,63}(\.[-a-z]{1,63})?\.gov\.au$'
-  # govCMS-D7:PageviewsTracker:
-  #   severity: normal
-  # govCMS-D7:Services:
-  #   severity: normal
-  # govCMS-D7:MaliciousWebformUpload:
-  #   severity: normal
-  # govCMS-D7:Shield:
-  #   severity: low
-  # govCMS-D7:NoSiteFactoryThemeReference:
-  #   severity: normal
 
   # Housekeeping
   Drupal:updates:
@@ -127,12 +47,6 @@ policies:
     parameters:
       max_size : 1000
       warning_size : 250
-  # Drupal-7:MissingModules:
-  #   severity: normal
-  # Drupal-7:InstallTaskCompleted:
-  #   severity: normal
-  # Drupal-7:ZenRegistryRebuild:
-  #   severity: normal
   fs:largeFiles:
     severity: normal
     parameters:
@@ -140,24 +54,11 @@ policies:
   Drupal:largeFiles:
     severity: normal
     parameters:
-      max_size : 20000
-  fs:SensitivePublicFiles:
-    severity: high
-    parameters:
-      extensions:
-        - sql #will likely indicate a data breach
+      max_size : 20000000 #20MB
   fs:SensitivePublicFiles:
     severity: normal
     parameters:
-      extensions:
-        - php
-        - sh
-        - py
-        - bz2
-        - gz
-        - tar
-        - tgz
-        - zip
+      extensions: 'sql,php,sh,py,bz2,gz,tar,tgz,zip'
 
   # Theme specific checks.
   Drupal:LintTheme:
@@ -172,7 +73,7 @@ policies:
   Drupal:ThemeSecurity:
     severity: normal
     parameters:
-      path: '/app/web/themes/custom/'
+      directory: '/app/web/themes/custom/'
       filetypes:
         - php
         - inc
