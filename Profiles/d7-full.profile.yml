@@ -15,7 +15,6 @@ policies:
         - govcms_tweaks
         - password_policy
         - lagoon_logs
-        - lagoon_search
         - robotstxt
         - seckit
         - shield
