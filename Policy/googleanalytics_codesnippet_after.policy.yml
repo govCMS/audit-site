@@ -20,6 +20,6 @@ parameters:
   key:
     default: googleanalytics_codesnippet_after
   value:
-    default: "ga('create', 'UA-54970022-1', 'auto', {'name': 'govcms'}); ga('govcms.send', 'pageview', {'anonymizeIp': true});"
+    default: "ga('create', 'UA-54970022-1', 'auto', {'name': 'govcms'}); ga('govcms.send', 'pageview', {'anonymizeIp': true})"
   comp_type:
     default: matches
