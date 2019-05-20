@@ -58,7 +58,6 @@ policies:
     severity: high
     parameters:
       blacklist : '(admin|root|drupal|god|no_reply|paul|sean|ruwan)'
-      email : 'noreply@govcms.gov.au'
       status : 1
   Drupal-7:UserRegistrationDisabled:
       severity: normal
