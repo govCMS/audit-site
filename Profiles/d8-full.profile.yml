@@ -12,6 +12,8 @@ policies:
     severity: high
   Drupal-8:SimpleTestDisabled:
     severity: normal
+  Drupal-8:ConfigIgnoreEnabled:
+    severity: high
   Drupal-8:StatisticsDisabled:
     severity: normal
   Drupal-8:UpdateDisabled:

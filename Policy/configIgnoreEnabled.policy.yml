@@ -1,0 +1,16 @@
+title: Config Ignore module enabled
+class: \Drutiny\Audit\Drupal\ModuleEnabled
+name: Drupal-8:ConfigIgnoreEnabled
+tags:
+  - Security
+description: |
+  This module ensures configured config items cannot be overwritten.
+
+remediation: "Download and enable the module: `composer require drupal/config_ignore`"
+success: The config_ignore module is currently enabled.
+failure: The config_ignore module is not currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is enabled.
+    default: config_ignore
