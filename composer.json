@@ -13,7 +13,8 @@
     "drutiny/drutiny": "2.3.3",
     "drutiny/http": "2.5",
     "drutiny/plugin-drupal-7": "2.2",
-    "drutiny/plugin-drupal-8": "2.2"
+    "drutiny/plugin-drupal-8": "2.2",
+    "symfony/cache": "^3.4.35"
   },
   "autoload": {
       "psr-4": {

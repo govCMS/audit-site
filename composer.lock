@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "215d0603865392fa162ee14a44323bf2",
+    "content-hash": "27ff726bde28cacecd1f6a56889fc87f",
     "packages": [
         {
             "name": "caseyamcl/toc",
@@ -1362,16 +1362,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v3.4.23",
+            "version": "v3.4.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "aa02b67f961a15cef21f21d293afcac574a62118"
+                "reference": "3d9f46a6960fd5cd7f030f86adc5b4b63bcfa4e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/aa02b67f961a15cef21f21d293afcac574a62118",
-                "reference": "aa02b67f961a15cef21f21d293afcac574a62118",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/3d9f46a6960fd5cd7f030f86adc5b4b63bcfa4e3",
+                "reference": "3d9f46a6960fd5cd7f030f86adc5b4b63bcfa4e3",
                 "shasum": ""
             },
             "require": {
@@ -1428,7 +1428,7 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2019-02-23T15:06:07+00:00"
+            "time": "2019-12-01T10:45:41+00:00"
         },
         {
             "name": "symfony/class-loader",
