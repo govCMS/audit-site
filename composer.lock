@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27ff726bde28cacecd1f6a56889fc87f",
+    "content-hash": "c81728666f6d765094a39a3ab38104b6",
     "packages": [
         {
             "name": "caseyamcl/toc",
@@ -316,16 +316,16 @@
         },
         {
             "name": "drutiny/drutiny",
-            "version": "2.3.3",
+            "version": "2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "b48e52d20a4d8e2704ac2e509bdb935b764655f0"
+                "reference": "7c1ddc8223099e64af8e8dd2b20920e1e8437e71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/b48e52d20a4d8e2704ac2e509bdb935b764655f0",
-                "reference": "b48e52d20a4d8e2704ac2e509bdb935b764655f0",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/7c1ddc8223099e64af8e8dd2b20920e1e8437e71",
+                "reference": "7c1ddc8223099e64af8e8dd2b20920e1e8437e71",
                 "shasum": ""
             },
             "require": {
@@ -387,7 +387,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2019-03-13T03:40:07+00:00"
+            "time": "2019-07-04T22:54:54+00:00"
         },
         {
             "name": "drutiny/http",
@@ -421,21 +421,21 @@
         },
         {
             "name": "drutiny/plugin-drupal-7",
-            "version": "2.2",
+            "version": "2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/plugin-drupal-7.git",
-                "reference": "fadb6de28c49e5caba4970290796fba4b655b87d"
+                "reference": "2ab9a877531ccf4e4fd83ba881ec1ce3ca061837"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/plugin-drupal-7/zipball/fadb6de28c49e5caba4970290796fba4b655b87d",
-                "reference": "fadb6de28c49e5caba4970290796fba4b655b87d",
+                "url": "https://api.github.com/repos/drutiny/plugin-drupal-7/zipball/2ab9a877531ccf4e4fd83ba881ec1ce3ca061837",
+                "reference": "2ab9a877531ccf4e4fd83ba881ec1ce3ca061837",
                 "shasum": ""
             },
             "require": {
-                "drutiny/drutiny": "2.3.*@dev",
-                "symfony/yaml": "^3.2"
+                "drutiny/drutiny": "^2.3",
+                "symfony/yaml": "^3.2 || ^4.1"
             },
             "require-dev": {
                 "drupal/coder": "^8.2.0",
@@ -471,25 +471,25 @@
                 "report",
                 "ssh"
             ],
-            "time": "2019-01-07T02:29:50+00:00"
+            "time": "2019-08-11T23:14:00+00:00"
         },
         {
             "name": "drutiny/plugin-drupal-8",
-            "version": "2.2",
+            "version": "2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/plugin-drupal-8.git",
-                "reference": "58ba0522b3ccae4f9b81b4946cc7fc4d944c9860"
+                "reference": "9682882bfdf41b0fe73bedee6bb8315416f87243"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/plugin-drupal-8/zipball/58ba0522b3ccae4f9b81b4946cc7fc4d944c9860",
-                "reference": "58ba0522b3ccae4f9b81b4946cc7fc4d944c9860",
+                "url": "https://api.github.com/repos/drutiny/plugin-drupal-8/zipball/9682882bfdf41b0fe73bedee6bb8315416f87243",
+                "reference": "9682882bfdf41b0fe73bedee6bb8315416f87243",
                 "shasum": ""
             },
             "require": {
-                "drutiny/drutiny": "2.3.*@dev",
-                "symfony/yaml": "^3.2"
+                "drutiny/drutiny": "^2.3",
+                "symfony/yaml": "^3.2 || ^4.0"
             },
             "require-dev": {
                 "drupal/coder": "^8.2.0",
@@ -525,7 +525,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2019-01-07T02:30:14+00:00"
+            "time": "2019-08-11T23:02:33+00:00"
         },
         {
             "name": "erusev/parsedown",
