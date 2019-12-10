@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27ff726bde28cacecd1f6a56889fc87f",
+    "content-hash": "7788021da794b5677bedcf73890082e0",
     "packages": [
         {
             "name": "caseyamcl/toc",
@@ -316,16 +316,16 @@
         },
         {
             "name": "drutiny/drutiny",
-            "version": "2.3.3",
+            "version": "2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drutiny/drutiny.git",
-                "reference": "b48e52d20a4d8e2704ac2e509bdb935b764655f0"
+                "reference": "7c1ddc8223099e64af8e8dd2b20920e1e8437e71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/b48e52d20a4d8e2704ac2e509bdb935b764655f0",
-                "reference": "b48e52d20a4d8e2704ac2e509bdb935b764655f0",
+                "url": "https://api.github.com/repos/drutiny/drutiny/zipball/7c1ddc8223099e64af8e8dd2b20920e1e8437e71",
+                "reference": "7c1ddc8223099e64af8e8dd2b20920e1e8437e71",
                 "shasum": ""
             },
             "require": {
@@ -387,7 +387,7 @@
                 "report",
                 "ssh"
             ],
-            "time": "2019-03-13T03:40:07+00:00"
+            "time": "2019-07-04T22:54:54+00:00"
         },
         {
             "name": "drutiny/http",
