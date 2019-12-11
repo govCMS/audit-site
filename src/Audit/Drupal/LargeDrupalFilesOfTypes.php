@@ -69,9 +69,10 @@ class LargeDrupalFilesOfTypes extends Audit {
       }
 
       foreach ($extensions as $extension) {
-        if (strrpos($record, $extension, -strlen($extension)) === FALSE) {
+        $parts = explode("\t", $record);
+        $e = explode(".", $parts[0]);
+        if (end($e) == $extension) {
           // Create the columns
-          $parts = explode("\t", $record);
           $rows[] = [
             'uri' => $parts[0],
             'size' => number_format((float)$parts[1] / 1000 / 1000, 2) . ' MB',
@@ -96,7 +97,7 @@ class LargeDrupalFilesOfTypes extends Audit {
     $sandbox->setParameter('files', $rows);
     $sandbox->setParameter('plural', $totalRows > 1 ? 's' : '');
 
-    return Audit::WARNING;
+    return Audit::WARNING_FAIL;
   }
 
 }
