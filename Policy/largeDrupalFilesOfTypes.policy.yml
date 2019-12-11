@@ -19,8 +19,12 @@ remediation: |
   Either delete the large Drupal files found that exceed {{readable_max_size}} if they are not needed, compress or optimize them,
   or look to house them in a more appropriate location.
 success: No large files found with matching extensions.
-failure: |
-  **{{total}} Large Drupal file{{plural}} found matching input extensions**<br>
+warning: |
+  Files with configured extensions were found over {{readable_max_size}}.
+
+  Work towards reducing the size of all {{total}} files to remediate this warning.
+  The results otherwise poses no risk other than site performance and/or cachability.
+
   The table below contains the following data:
       - **URI** - The path and filename.
       - **Size** - The size of the file as reported by Drupal.

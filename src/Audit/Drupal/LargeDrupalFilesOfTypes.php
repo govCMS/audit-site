@@ -77,6 +77,7 @@ class LargeDrupalFilesOfTypes extends Audit {
             'size' => number_format((float)$parts[1] / 1000 / 1000, 2) . ' MB',
             'usage' => ($parts[2] == 0) ? 'No' : 'Yes'
           ];
+          break;
         }
       }
     }
