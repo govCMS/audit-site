@@ -95,7 +95,7 @@ class LargeDrupalFilesOfTypes extends Audit {
     $sandbox->setParameter('files', $rows);
     $sandbox->setParameter('plural', $totalRows > 1 ? 's' : '');
 
-    return Audit::FAIL;
+    return Audit::WARNING;
   }
 
 }
