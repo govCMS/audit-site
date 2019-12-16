@@ -70,15 +70,17 @@ class LargeDrupalFilesOfTypes extends Audit {
 
       foreach ($extensions as $extension) {
         $parts = explode("\t", $record);
-        $e = explode(".", $parts[0]);
-        if (end($e) == $extension) {
-          // Create the columns
-          $rows[] = [
-            'uri' => $parts[0],
-            'size' => $this->readableSize($parts[1]),
-            'usage' => ($parts[2] == 0) ? 'No' : 'Yes'
-          ];
-          break;
+        if ($parts[0]) {
+          $file_ext = pathinfo($parts[0], PATHINFO_EXTENSION);
+          if ($file_ext === $extension) {
+            // Create the columns
+            $rows[] = [
+              'uri' => $parts[0],
+              'size' => $this->readableSize($parts[1]),
+              'usage' => ($parts[2] == 0) ? 'No' : 'Yes'
+            ];
+            break;
+          }
         }
       }
     }
