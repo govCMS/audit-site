@@ -51,7 +51,7 @@ class LargeDrupalFilesOfTypes extends Audit {
   public function audit(Sandbox $sandbox) {
     $max_size = (int) $sandbox->getParameter('max_size', 2000000);
     $extensions = (array) $sandbox->getParameter('extensions', []);
-    $sandbox->setParameter('readable_max_size', $max_size / 1000 / 1000 . ' MB');
+    $sandbox->setParameter('readable_max_size', $this->readableSize($max_size));
     $query = "SELECT fm.uri, fm.filesize, (SELECT COUNT(*) FROM file_usage fu WHERE fu.fid = fm.fid) as 'usage' FROM file_managed fm WHERE fm.filesize >= @size ORDER BY fm.filesize DESC";
     $query = strtr($query, ['@size' => $max_size]);
     $output = $sandbox->drush()->sqlQuery($query);
@@ -75,7 +75,7 @@ class LargeDrupalFilesOfTypes extends Audit {
           // Create the columns
           $rows[] = [
             'uri' => $parts[0],
-            'size' => number_format((float)$parts[1] / 1000 / 1000, 2) . ' MB',
+            'size' => $this->readableSize($parts[1]),
             'usage' => ($parts[2] == 0) ? 'No' : 'Yes'
           ];
           break;
@@ -98,6 +98,15 @@ class LargeDrupalFilesOfTypes extends Audit {
     $sandbox->setParameter('plural', $totalRows > 1 ? 's' : '');
 
     return Audit::WARNING_FAIL;
+  }
+
+  private function readableSize($bytes, $decimals = 2) {
+    if ($bytes < 1024) {
+      return $bytes . ' B';
+    }
+
+    $factor = floor(log($bytes, 1024));
+    return sprintf("%.{$decimals}f ", $bytes / pow(1024, $factor)) . ['B', 'KB', 'MB', 'GB', 'TB', 'PB'][$factor];
   }
 
 }
