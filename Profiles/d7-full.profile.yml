@@ -33,6 +33,8 @@ policies:
     severity: normal
   Drupal-7:UpdateModuleDisabled:
     severity: high
+  Drupal-7:MimeMailModuleDisabled:
+    severity: high
 
   # permissions
   Drupal-7:BlackListPermissions:
