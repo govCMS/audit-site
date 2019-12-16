@@ -61,6 +61,8 @@ policies:
     severity: normal
     parameters:
       extensions: 'sql,php,sh,py,bz2,gz,tar,tgz,zip'
+  Drupal:largeFilesOfTypes:
+    severity: normal
 
   # Theme specific checks.
   Drupal:LintTheme:

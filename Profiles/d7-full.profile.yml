@@ -140,6 +140,8 @@ policies:
     severity: normal
     parameters:
       max_size : 20000000 #20MB
+  Drupal:largeFilesOfTypes:
+    severity: normal
   fs:SensitivePublicFiles:
     severity: normal
     parameters:
