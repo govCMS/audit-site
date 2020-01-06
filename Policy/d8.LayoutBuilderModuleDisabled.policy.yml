@@ -11,7 +11,7 @@ description: |
   later, however as an interim solution this will show data to
   the team in the dashboard for visibility.
 remediation: |
-  Optionally sisable the layout_builder module: `drush pm-uninstall layout_builder -y`.
+  Optionally disable the layout_builder module: `drush pm-uninstall layout_builder -y`.
 success: The layout_builder module is not currently enabled.
 failure: The layout_builder module is currently enabled.
 parameters:
