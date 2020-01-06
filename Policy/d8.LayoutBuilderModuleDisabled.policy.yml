@@ -1,6 +1,6 @@
 title: Layout Builder is not installed
 name: Drupal-8:LayoutBuilderModuleDisabled
-class: \Drutiny\Plugin\Drupal7\Audit\ModuleDisabled
+class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
 tags:
   - Drupal 8
   - Maintenance
