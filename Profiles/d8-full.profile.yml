@@ -18,6 +18,8 @@ policies:
     severity: normal
   Drupal-8:UpdateDisabled:
     severity: high
+  Drupal-8:LayoutBuilderModuleDisabled:
+    severity: normal
 
   # permissions
   Drupal:AnonSession:
