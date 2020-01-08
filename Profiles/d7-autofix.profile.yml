@@ -1,0 +1,11 @@
+title: 'Drupal 7 Auto-remediate audits'
+format:
+  html:
+    template: govcms-page
+policies:
+  Drupal-7:User1LockDown:
+    severity: high
+    parameters:
+      blacklist : '(admin|root|drupal|god|no_reply|paul|sean|ruwan)'
+      email : 'noreply@govcms.gov.au'
+      status : 1
