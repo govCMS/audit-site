@@ -22,6 +22,8 @@ policies:
     severity: normal
 
   # permissions
+  govCMS-D8:AnonymousPublishingAccess:
+    severity: low
   Drupal:AnonSession:
     severity: normal
   Drupal-8:User1LockDown:
