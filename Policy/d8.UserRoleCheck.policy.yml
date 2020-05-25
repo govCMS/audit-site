@@ -1,6 +1,6 @@
 title: Drupal users in certain roles
 name: Drupal-8:UserRoleCheck
-class: Drutiny\Fubarhouse\Audit\Drupal8\UserRoleCheck
+class: Drutiny\GovCMS\Audit\Drupal8\UserRoleCheck
 tags:
   - Best Practice
   - Security

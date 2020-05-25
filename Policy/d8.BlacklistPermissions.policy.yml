@@ -1,6 +1,6 @@
 title: BlackList Permissions
 name: Drupal-8:PermissionsBlackList
-class: \Drutiny\Fubarhouse\Audit\Drupal8\PermissionsBlacklist
+class: \Drutiny\GovCMS\Audit\Drupal8\PermissionsBlacklist
 tags:
   - Drupal 8
   - Sanity
