@@ -33,6 +33,8 @@ policies:
     severity: normal
   Drupal-7:UpdateModuleDisabled:
     severity: high
+  Drupal-7:MimeMailModuleDisabled:
+    severity: high
 
   # permissions
   Drupal-7:BlackListPermissions:
@@ -139,24 +141,13 @@ policies:
   Drupal:largeFiles:
     severity: normal
     parameters:
-      max_size : 20000
-  fs:SensitivePublicFiles:
-    severity: high
-    parameters:
-      extensions:
-        - sql #will likely indicate a data breach
+      max_size : 20000000 #20MB
+  Drupal:largeFilesOfTypes:
+    severity: normal
   fs:SensitivePublicFiles:
     severity: normal
     parameters:
-      extensions:
-        - php
-        - sh
-        - py
-        - bz2
-        - gz
-        - tar
-        - tgz
-        - zip
+      extensions: 'sql,php,sh,py,bz2,gz,tar,tgz,zip'
 
   # Theme specific checks.
   Drupal:LintTheme:
@@ -176,7 +167,6 @@ policies:
         - "_POST"
         - "exec\\("
         - "db_query"
-        - "db_select"
         - "db_merge"
         - "db_update"
         - "db_write_record"
@@ -191,16 +181,10 @@ policies:
         - "mysqli"
         - "sqlite"
         - "db_query"
-        - "db_fetch"
         - "db_result"
         - "pager_query"
         - "db_set_active"
-        - "db_select"
         - "db_insert"
         - "db_update"
         - "db_delete"
-        - "fetchAll"
-        - "fetchField"
-        - "fetchObject"
-        - "fetchAssoc"
         - "countQuery"

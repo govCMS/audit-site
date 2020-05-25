@@ -1,0 +1,44 @@
+title: 'Drupal Gitlab Pipeline'
+format:
+  html:
+    template: govcms-page
+policies:
+  Drupal:LintTheme:
+    severity: low
+  Drupal8:UserIsAdminCheck:
+    severity: critical
+  Drupal:ModuleScan:
+    severity: critical
+  Drupal:ThemeSecurity:
+    severity: critical
+    parameters:
+      directory: '/app/web/themes/custom/'
+      filetypes:
+        - php
+        - inc
+        - theme
+      patterns:
+        - "_POST"
+        - "exec\\("
+        - "db_query"
+        - "db_merge"
+        - "db_update"
+        - "db_write_record"
+        - "\\->query"
+        - "drupal_http_request"
+        - "curl_init"
+        - "passthru"
+        - "proc_open"
+        - "system\\("
+        - "sleep\\("
+        - "mysql_"
+        - "mysqli"
+        - "sqlite"
+        - "db_query"
+        - "db_result"
+        - "pager_query"
+        - "db_set_active"
+        - "db_insert"
+        - "db_update"
+        - "db_delete"
+        - "countQuery"

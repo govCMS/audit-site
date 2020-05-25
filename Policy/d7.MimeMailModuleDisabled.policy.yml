@@ -1,0 +1,23 @@
+title: MimeMail Module is not installed
+name: Drupal-7:MimeMailModuleDisabled
+class: \Drutiny\Plugin\Drupal7\Audit\ModuleDisabled
+tags:
+  - Drupal 7
+  - Best Practice
+  - Performance
+description: |
+  GovCMS strongly suggests SwiftMailer so that SMTP can be configured
+  to provide email verification. The use of MimeMail is considered to
+  be deprecated and discouraged. This audit is to provide customers
+  and Finance staff visibility into the scope of migrating any customers
+  using this module to SwiftMailer for when MimeMail is to be removed
+  from the distribution.
+remediation: |
+  Disable the mimemail module: `drush pm-uninstall mimemail -y`.
+success: The mimemail module is not currently enabled.
+failure: The mimemail module is currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is not installed.
+    default: mimemail

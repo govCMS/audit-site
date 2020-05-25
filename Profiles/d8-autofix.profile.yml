@@ -1,0 +1,11 @@
+title: 'Drupal 8 Auto-remediate audits'
+format:
+  html:
+    template: govcms-page
+policies:
+  Drupal-8:User1LockDown:
+    severity: high
+    parameters:
+      blacklist : '(admin|root|drupal|god|govcms)'
+      email : 'noreply@govcms.gov.au'
+      status : 1

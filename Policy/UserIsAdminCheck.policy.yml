@@ -1,0 +1,20 @@
+title: "User administration account security validation"
+name: Drupal8:UserIsAdminCheck
+class: \Drutiny\GovCMS\Audit\Drupal8\UserIsAdminCheck
+tags:
+  - Drupal 8
+  - Best Practice
+  - Security
+description: Idetify if any users or roles have the is_admin property set to true
+remediation: "Using some form of configuration management, set the value to false."
+success: The insecure property is set correctly.
+warning: |
+  The insecure property is set incorrectly.
+  {{ #results }}
+    - {{ . }}
+  {{ /results }}
+failure: |
+  The insecure property is set incorrectly.
+  {{#results}}
+  - {{ . }}
+  {{/results}}

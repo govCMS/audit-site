@@ -1,0 +1,21 @@
+title: Layout Builder is not installed
+name: Drupal-8:LayoutBuilderModuleDisabled
+class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
+tags:
+  - Drupal 8
+  - Maintenance
+description: |
+  For the purposes of upgrading to Drupal 8.8.x it is important
+  for the GovCMS team to be aware of any and all sites which are
+  using this module. This policy will be removed from the profile
+  later, however as an interim solution this will show data to
+  the team in the dashboard for visibility.
+remediation: |
+  Optionally disable the layout_builder module: `drush pm-uninstall layout_builder -y`.
+success: The layout_builder module is not currently enabled.
+failure: The layout_builder module is currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is not installed.
+    default: layout_builder
