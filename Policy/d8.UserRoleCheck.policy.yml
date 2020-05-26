@@ -1,0 +1,26 @@
+title: Drupal users in certain roles
+name: Drupal-8:UserRoleCheck
+class: Drutiny\GovCMS\Audit\Drupal8\UserRoleCheck
+tags:
+  - Best Practice
+  - Security
+description: |
+  Check if users are in role groups configured, to allow
+  administrators to have visibility of superseded or
+  privlidged user roles, and to provide a way to report
+  on this.
+remediation: |
+  Remove the specified users from the user role groups.
+success: No users belong to the configured user roles.
+failure: |
+  The following problems were found:
+  {{#results}}
+    - {{ . }}
+  {{/results}}
+parameters:
+  allowed:
+    default:
+      - 1
+  roles:
+    default:
+      - administrator

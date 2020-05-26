@@ -1,0 +1,35 @@
+title: BlackList Permissions
+name: Drupal-8:PermissionsBlackList
+class: \Drutiny\GovCMS\Audit\Drupal8\PermissionsBlacklist
+tags:
+  - Drupal 8
+  - Sanity
+description: Checks to ensure roles do not contain blacklisted permissions.
+remediation: Remove blacklisted permissions from roles.
+success: No blacklisted permissions were found in use.
+failure: |
+  The following permissions should not be assigned to the configured roles:
+
+  {{#blacklistedPermissions}}
+    - {{ . }}
+  {{/blacklistedPermissions}}
+
+  The following roles were found to have undesired permissions:
+
+  {{#affectedRoles}}
+    - {{ . }}
+  {{/affectedRoles}}
+parameters:
+  roles:
+    type: array
+    default:
+      - anonymous
+    description: |
+      An array of user roles to validate against the blacklist.
+  permissions:
+    type: array
+    default:
+      - administer site configuration
+    description: |
+      An array of permissions to ensure are not available to non-administrator
+      roles

@@ -32,6 +32,31 @@ policies:
       status : 1
   Drupal-8:UserRegistrationAdminOnly:
       severity: normal
+  Drupal-8:UserIsAdminCheck:
+    severity: critical
+  Drupal-8:UserRoleCheck:
+    severity: critical
+  Drupal-8:PermissionsBlackList:
+    severity: critical
+    parameters:
+      permissions :
+        # Permissions are inherited from historic
+        # decisions and should undertake an
+        # evaluation - some don't even exist on D8.
+        - 'add JS snippets for google analytics'
+        - 'administer features'
+        - 'administer govcms_dlm'
+        - 'administer module permissions'
+        - 'administer modules'
+        - 'administer password policies'
+        - 'administer permissions'
+        - 'administer seckit'
+        - 'administer site configuration'
+        - 'administer software updates'
+        - 'assign all roles'
+        - 'generate features'
+        - 'manage features'
+        - 'rename features'
 
   # Performance
   Drupal-8:CssAggregation:
