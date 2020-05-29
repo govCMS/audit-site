@@ -36,9 +36,18 @@ policies:
     severity: critical
   Drupal-8:UserRoleCheck:
     severity: critical
+    parameters:
+      roles:
+        - 'admin'
+        - 'administrator'
+        - 'site_administrator'
   Drupal-8:PermissionsBlackList:
     severity: critical
     parameters:
+      roles:
+        - 'anonymous'
+        - 'authenticated'
+        - 'admin'
       permissions :
         # Permissions are inherited from historic
         # decisions and should undertake an
