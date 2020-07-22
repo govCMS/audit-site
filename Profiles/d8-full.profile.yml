@@ -66,6 +66,8 @@ policies:
         - 'generate features'
         - 'manage features'
         - 'rename features'
+        - 'use PHP for tracking visibility'
+        - 'import configuration'
 
   # Performance
   Drupal-8:CssAggregation:
