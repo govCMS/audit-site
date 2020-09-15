@@ -1,0 +1,17 @@
+title: ClamAV module enabled
+class: \Drutiny\Audit\Drupal\ModuleEnabled
+name: Drupal-8:ClamAVEnabled
+tags:
+  - Performance
+  - Security
+  - Best Practice
+description: |
+  GovCMS Platform requirement
+remediation: "Download and enable the module: `drush en clamav -y`"
+success: The clamav module is currently enabled.
+failure: The clamav module is not currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is enabled.
+    default: clamav
