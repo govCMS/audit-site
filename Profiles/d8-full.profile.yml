@@ -4,6 +4,24 @@ format:
     template: govcms-page
 policies:
   # Modules
+  Drupal-8:ClamAVEnabled:
+    severity: high
+  Drupal-8:GoogleAnalyticsEnabled:
+    severity: high
+  Drupal-8:GovCMSSecurityEnabled:
+    severity: high
+  Drupal-8:LoginSecurityEnabled:
+    severity: high
+  Drupal-8:PasswordPolicyEnabled:
+    severity: high
+  Drupal-8:RobotsTXTEnabled:
+    severity: high
+  Drupal-8:SecurityKitEnabled:
+    severity: high
+  Drupal-8:ShieldEnabled:
+    severity: high
+  Drupal-8:UsernameEnumerationPreventionEnabled:
+    severity: high
   Drupal:SyslogEnabled:
     severity: normal
   Drupal-8:DblogDisabled:
