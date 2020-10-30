@@ -1,0 +1,17 @@
+title: Username Enumeration Prevention module enabled
+class: \Drutiny\Audit\Drupal\ModuleEnabled
+name: Drupal-8:UsernameEnumerationPreventionEnabled
+tags:
+  - Performance
+  - Security
+  - Best Practice
+description: |
+  GovCMS Platform requirement
+remediation: "Download and enable the module: `drush en username_enumeration_prevention -y`"
+success: The username_enumeration_prevention module is currently enabled.
+failure: The username_enumeration_prevention module is not currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is enabled.
+    default: username_enumeration_prevention

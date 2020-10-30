@@ -55,6 +55,8 @@ policies:
         - 'generate features'
         - 'manage features'
         - 'rename features'
+        - 'use PHP for tracking visibility'
+        - 'bypass password policies'
   Drupal:AnonSession:
     severity: normal
   Drupal-7:User1LockDown:

@@ -1,0 +1,17 @@
+title: Google Analytics module enabled
+class: \Drutiny\Audit\Drupal\ModuleEnabled
+name: Drupal-8:GoogleAnalyticsEnabled
+tags:
+  - Performance
+  - Security
+  - Best Practice
+description: |
+  GovCMS Platform requirement
+remediation: "Download and enable the module: `drush en google_analytics -y`"
+success: The google_analytics module is currently enabled.
+failure: The google_analytics module is not currently enabled.
+parameters:
+  module:
+    type: string
+    description: The name of the module to ensure is enabled.
+    default: google_analytics
