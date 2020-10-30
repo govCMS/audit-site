@@ -57,6 +57,9 @@ policies:
         - 'generate features'
         - 'manage features'
         - 'rename features'
+        - 'use PHP for tracking visibility'
+        - 'bypass password policies'
+        - 'import configuration'
 
   # Performance
   Drupal-8:CssAggregation:
