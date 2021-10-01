@@ -1,0 +1,16 @@
+/vendor/
+/storage/
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Composer vendor
+composer.lock
+vendor/
+vendor/.git
+
+# PHPStorm
+.idea/
+atlassian-ide-plugin.xml

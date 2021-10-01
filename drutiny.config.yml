@@ -1,0 +1,4 @@
+Command:
+  - GovCMS\Audit\Command\GovCMSAuditRunCommand
+Template:
+  - Templates

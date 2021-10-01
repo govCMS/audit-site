@@ -1,0 +1,176 @@
+title: 'GovCMS D7 Site Audit'
+description: 'GovCMS D7 site audit report.'
+policies:
+  # Special users.
+  Drupal-7:User1LockDown:
+    parameters:
+      blacklist: '(admin|root|drupal|no_reply)'
+      email: 'noreply@govcms.gov.au'
+      status: 1
+    severity: critical
+  Drupal-7:NoAdmins:
+    severity: high
+
+  # permissions
+  Drupal-7:BlackListPermissions:
+    parameters:
+      permissions:
+        - 'add JS snippets for google analytics'
+        - 'administer features'
+        - 'administer govcms_dlm'
+        - 'administer module permissions'
+        - 'administer modules'
+        - 'administer password policies'
+        - 'administer permissions'
+        - 'administer seckit'
+        - 'administer site configuration'
+        - 'administer software updates'
+        - 'assign all roles'
+        - 'generate features'
+        - 'manage features'
+        - 'rename features'
+        - 'use PHP for tracking visibility'
+        - 'bypass password policies'
+    severity: high
+  Drupal-7:UserRegistrationDisabled:
+    severity: normal
+  Drupal-7:PSA-2016-003:
+    severity: high
+
+  # Modules
+  Drupal-7:ModulesEnabled:
+    severity: high
+    parameters:
+      modules:
+        - clamav
+        - googleanalytics
+        - govcms_account_security
+        - govcms_password_policy
+        - govcms_tweaks
+        - password_policy
+        - lagoon_logs
+        - lagoon_search
+        - robotstxt
+        - seckit
+        - shield
+  Drupal:SyslogEnabled:
+    severity: normal
+  Drupal-7:DblogModuleDisabled:
+    severity: normal
+  Drupal-7:OverlayModuleDisabled:
+    severity: normal
+  Drupal-7:PhpModuleDisabled:
+    severity: high
+  Drupal-7:SimpletestModuleDisabled:
+    severity: normal
+  Drupal-7:StatisticsModuleDisabled:
+    severity: normal
+  Drupal-7:UpdateModuleDisabled:
+    severity: high
+
+  # Housekeeping
+  Drupal:updates:
+    severity: normal
+  Database:Size:
+    severity: normal
+    parameters:
+      max_size : 1000
+      warning_size : 250
+  Drupal-7:MissingModules:
+    severity: normal
+  Drupal-7:InstallTaskCompleted:
+    severity: normal
+  Drupal-7:ZenRegistryRebuild:
+    severity: normal
+  fs:largeFiles:
+    severity: normal
+    parameters:
+      max_size : 20
+  Drupal:largeFiles:
+    severity: normal
+    parameters:
+      max_size : 20000000 #20MB
+  fs:SensitivePublicFiles:
+    severity: normal
+    parameters:
+      extensions: 'sql,php,sh,py,bz2,gz,tar,tgz,zip'
+
+  # Performance
+  Drupal-7:CSSAggregation:
+    severity: normal
+  Drupal-7:JsAggregation:
+    severity: normal
+  Drupal-7:ErrorLevel:
+    severity: normal
+  Drupal-7:ImageDerivatives:
+    severity: normal
+  Drupal-7:CacheLifetime:
+    severity: normal
+  Drupal-7:PageCacheMaximumAge:
+    severity: normal
+    parameters:
+      value : 300
+  Drupal-7:Search404ModuleDisabled:
+    severity: normal
+  Drupal-7:CronLast:
+    severity: normal
+  Drupal-7:PoorMansCronDisabled:
+    severity: normal
+  Drupal-7:ViewsCache:
+    severity: normal
+  Drupal-7:ViewsPagination:
+    severity: normal
+    parameters:
+      limit : 100
+
+  # Theme specific checks.
+  Drupal:LintTheme:
+    severity: low
+  fs:DrupalThemeDirectory:
+    severity: normal
+    parameters:
+      max_size: 50
+  Drupal:ThemeSecurity:
+    severity: normal
+    parameters:
+      filetypes:
+        - php
+        - inc
+        - theme
+      patterns:
+        - "_POST"
+        - "exec\\("
+        - "db_query"
+        - "db_merge"
+        - "db_update"
+        - "db_write_record"
+        - "\\->query"
+        - "drupal_http_request"
+        - "curl_init"
+        - "passthru"
+        - "proc_open"
+        - "system\\("
+        - "sleep\\("
+        - "mysql_"
+        - "mysqli"
+        - "sqlite"
+        - "db_query"
+        - "db_result"
+        - "pager_query"
+        - "db_set_active"
+        - "db_insert"
+        - "db_update"
+        - "db_delete"
+        - "countQuery"
+
+  # GovCMS specific
+  Drupal-7:XMLSitemapBaseURL:
+    severity: low
+    parameters:
+      value : '^https://(www|ministerial|agency|blog|docs|annualreport|innovation|soe|news)\.[-a-z]{1,63}(\.[-a-z]{1,63})?\.gov\.au$'
+
+format:
+  html:
+    template: govcms-page
+  markdown:
+    template: govcms-page

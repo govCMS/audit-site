@@ -1,0 +1,36 @@
+{
+    "name": "govcms/audit",
+    "description": "GovCMS site audit and remediation tool.",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Pandaski",
+            "email": "pandaski@outlook.com.au"
+        }
+    ],
+    "require": {
+        "drutiny/drutiny": "^2.4",
+        "drutiny/plugin-drupal-7": "2.3.0",
+        "drutiny/plugin-drupal-8": "2.3.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "GovCMS\\Audit\\": "src/",
+            "GovCMS\\Audit\\Tests\\": "tests/src/",
+            "Drutiny\\AuditResponse\\": "src/Drutiny"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "nuke": "rm -r -f composer.lock vendor"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
