@@ -58,6 +58,8 @@ policies:
     severity: high
   Drupal:updates:
     severity: normal
+  Drupal-7:InstallTaskCompleted:
+    severity: high
   # Theme specific checks.
   Drupal:ThemeSecurity:
     parameters:
@@ -144,8 +146,6 @@ policies:
       max_size : 1000
       warning_size : 250
   Drupal-7:MissingModules:
-    severity: normal
-  Drupal-7:InstallTaskCompleted:
     severity: normal
   Drupal-7:ZenRegistryRebuild:
     severity: normal
