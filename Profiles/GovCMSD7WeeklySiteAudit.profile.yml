@@ -93,6 +93,11 @@ policies:
         - "db_delete"
         - "countQuery"
     severity: high
+  # GovCMS specific settings.
+  GovCMS:D7:GoogleAnalyticsAccount:
+    severity: high
+  GovCMS:D7:PageviewsTracker:
+    severity: high
   # Best practise.
   Drupal-7:XMLSitemapBaseURL:
     parameters:

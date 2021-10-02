@@ -1,0 +1,24 @@
+title: "GovCMS D7: Pageviews Tracker"
+class: \Drutiny\Plugin\Drupal7\Audit\VariableCompare
+name: GovCMS:D7:PageviewsTracker
+tags:
+  - Compliance
+description: |
+  On the SaaS platform, GovCMS requires a Google Analytics snippet to be added
+  after the sites main GA code is added. The GovCMS snippet simply tracks
+  pageviews against the platform.
+remediation: |
+  Please ensure the following snippet is added after the sites main Google
+  Analytics code:
+  ```
+  ga('create', 'UA-54970022-1', 'auto', {'name': 'govcms'}); ga('govcms.send', 'pageview', {'anonymizeIp': true});
+  ```
+success: "Pageview tracker installed"
+failure: Pageview tracker has not been added to the site.
+parameters:
+  key:
+    default: googleanalytics_codesnippet_after
+  value:
+    default: "ga('create', 'UA-54970022-1', 'auto', {'name': 'govcms'}); ga('govcms.send', 'pageview', {'anonymizeIp': true});"
+  comp_type:
+    default: matches
