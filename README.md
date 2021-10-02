@@ -18,5 +18,5 @@ vendor/bin/drutiny status
 * Run a GovCMS D7 site audit
 
 ```
-vendor/bin/drutiny govcms:audit:run GovCMSD7SiteAudit @govcms7 --format=html --report-filename=govcms-d7.html
+vendor/bin/drutiny govcms:audit:run GovCMSD7FullSiteAudit @govcms7 --format=html --report-filename=govcms-d7.html
 ```

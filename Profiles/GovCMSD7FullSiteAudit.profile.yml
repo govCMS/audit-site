@@ -1,0 +1,7 @@
+title: 'GovCMS D7 Full Site Audit'
+description: 'GovCMS D7 full site audit report.'
+format:
+  html:
+    template: govcms-page
+  markdown:
+    template: govcms-page

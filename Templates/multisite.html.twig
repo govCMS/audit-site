@@ -1,0 +1,84 @@
+<div id="report" class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+
+        <div class="col-sm-12">
+            <h2>Summary</h2>
+            <div
+                class="chart-unprocessed"
+                data-chart-type="horizontalBar"
+                data-chart-title="Site outcomes by Audit"
+                data-chart-hide-table="true"
+                data-chart-labels="tbody th"
+                data-chart-series="tr td:nth-child(2), tr td:nth-child(3), tr td:nth-child(4), tr td:nth-child(5), tr td:nth-child(6), tr td:nth-child(7)"
+                data-chart-series-labels="thead th:nth-child(2), thead th:nth-child(3), thead th:nth-child(4), thead th:nth-child(5), thead th:nth-child(6), thead th:nth-child(7)"
+                data-chart-stacked="true"
+                data-chart-height="250"
+                data-chart-legend="bottom"
+                data-chart-x-axis="Sites Audited"
+                data-chart-colors="rgba(46, 204, 113,1.0);rgba(230, 126, 34,1.0);rgba(192, 57, 43,1.0);rgba(241, 196, 15,1.0);rgba(52, 73, 94,1.0)"></div>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Policy</th>
+                    <th>Success</th>
+                    <th>Warning</th>
+                    <th>Failed</th>
+                    <th>Error</th>
+                    <th>Not Applicable</th>
+                    <th>Notice</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for policy_name, policy_results in by_policy %}
+                    <tr>
+                        <th><a href="#{{ policy_results.name }}">{{ policy_results.title }}</a></th>
+                        <td>{{ policy_results.success }}</td>
+                        <td>{{ policy_results.warning }}</td>
+                        <td>{{ policy_results.failure }}</td>
+                        <td>{{ policy_results.error }}</td>
+                        <td>{{ policy_results.not_applicable }}</td>
+                        <td>{{ policy_results.notice }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-10">
+            <h2>Site results by policy</h2>
+            {% for policy_name, policy_results in by_policy %}
+                <h3 id="{{ policy_results.name }}">{{ policy_results.title }}</h3>
+                <div>{{ policy_results.description | raw }}</div>
+                <div>{{ policy_results.remediation | raw }}</div>
+                {% if policy_results.success == policy_results.total %}
+                    <div class="alert alert-success" role="alert">All sites passed this policy.</div>
+                {% else %}
+                    <h4>Policy failures by site</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Site</th>
+                            <th>Result</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for uri, site in policy_results.sites if site.isSuccessful == false %}
+                            <tr>
+                                <td>{{ uri }}</td>
+                                <td>
+                                    {{ site.message | raw }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <hr>
+</div> <!-- /container -->
