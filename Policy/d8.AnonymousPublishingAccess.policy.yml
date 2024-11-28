@@ -1,0 +1,48 @@
+title: govCMS Publishing Permissions Validation
+name: govCMS-D8:AnonymousPublishingAccess
+class: \Drutiny\GovCMS\Audit\Drupal8\AnonymousPublishingAccess
+tags:
+  - Drupal 8
+description: |
+  Checks a user role (default: anonymous) for common
+  publishing permissions which can be configured.
+  This will prevent undesired publishing permissions
+  from making it past the auditing phase.
+remediation: |
+  User roles still have the following permission(s):
+
+  {{# warnings }}
+    {{ . }}
+  {{/ warnings }}
+success: |
+  Publishing permissions configured have validated successfully.
+failure: |
+  User roles still have the following permission(s):
+
+  {{# warnings }}
+    {{ . }}
+  {{/ warnings }}
+warning: |
+  User roles still have the following permission(s):
+
+  {{# warnings }}
+    {{ . }}
+  {{/ warnings }}
+parameters:
+  roles:
+    description: The name of the user to check.
+    default:
+      - anonymous
+  patterns:
+    description: The patterns to check for.
+    default:
+      - "administer nodes"
+      - "create .* content"
+      - "delete any .*"
+      - "delete own .*"
+      - "edit any .*"
+      - "edit own .*"
+      - "revert .* revisions"
+      - "view .* revisions"
+      - "view .* submissions"
+      - "view unpublished"
